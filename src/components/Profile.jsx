@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Profile() {
   return (
-    <div className="flex flex-row justify-center items-center space-x-52">
+    <div className="flex flex-row justify-center items-center space-x-52 pt-36 shadow-lg pb-8">
       <div className="Text-Description text-white font-bold">
         <p className="text-4xl pb-3">Hello, It&apos;s Me</p>
         <p className="text-6xl">Athallah Tsany Satriyaji</p>
@@ -29,8 +29,8 @@ export default function Profile() {
             <a target="_blank" href="https://www.instagram.com/ath_tsany"><FaInstagram size={40}/></a>
         </div>
       </div>
-      <div className="Image-Profile">
-        <img src={profil} alt="Profile" />
+      <div className='Image-Profil'>
+        <img className='drop-shadow-2xl' src={profil} alt="Profile" />
       </div>
     </div>
   );

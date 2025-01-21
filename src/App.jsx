@@ -9,7 +9,7 @@ export default function App() {
         <div>
           <NavBar />
         </div>
-        <div className='pt-36'>
+        <div>
           <Profile />
         </div>
         <div>
