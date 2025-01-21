@@ -1,0 +1,21 @@
+1. Navbar:
+   - Fix linking to web part
+
+2. Profile:
+   - Edit and add Animation to profile pictures
+
+3. About Me
+   - Bunch of pictures (grid) about me
+   - more description of the specialization
+   - tech stack logos
+   - "Know Better" button to download CV
+
+4. Portofolio
+   - Snippet of some of my Portofolio
+   - Link button to another page of full portofolio
+
+5. Service
+   - Two Option of Web Development and Data Analyst
+
+Footer
+Copyright All Right Reserved blablablabla

@@ -1,0 +1,14 @@
+.typed-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    animation: blink 0.7s infinite step-end;
+  }
+  
+  @keyframes blink {
+    50% {
+      background-color: transparent;
+    }
+  }
+  
