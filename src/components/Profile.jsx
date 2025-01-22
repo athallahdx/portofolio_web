@@ -1,11 +1,17 @@
 import { TypeAnimation } from 'react-type-animation';
-import profil from '../assets/profil_fix.png';
-import './styles.css';
+import profil from '../assets/new_profile.png';
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { motion } from 'framer-motion';
+
 
 export default function Profile() {
   return (
-    <div className="flex flex-row justify-center items-center space-x-52 pt-36 shadow-lg pb-8">
+    <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+      className="h-screen w-screen flex flex-row justify-center items-center space-x-52 pt-14 shadow-lg pb-8"
+    >
       <div className="Text-Description text-white font-bold">
         <p className="text-4xl pb-3">Hello, It&apos;s Me</p>
         <p className="text-6xl">Athallah Tsany Satriyaji</p>
@@ -29,9 +35,10 @@ export default function Profile() {
             <a target="_blank" href="https://www.instagram.com/ath_tsany"><FaInstagram size={40}/></a>
         </div>
       </div>
-      <div className='Image-Profil'>
-        <img className='drop-shadow-2xl' src={profil} alt="Profile" />
+
+      <div className='Image-Profil animate-bounceCustom'>
+        <img className='drop-shadow-2xl max-h-[610px]' src={profil} alt="Profile" />
       </div>
-    </div>
+    </motion.div>
   );
 }

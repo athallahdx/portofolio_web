@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-scroll';
 
 export default function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -28,13 +29,58 @@ export default function NavBar() {
                     <h1 className="text-3xl font-bold">AthallahTS</h1>
                 </div>
                 <div className="nav-links me-24">
-                    <ul className="flex space-x-16">
-                        <li><a href="#" className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white">Home</a></li>
-                        <li><a href="#" className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white">About</a></li>
-                        <li><a href="#" className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white">Portofolio</a></li>
-                        <li><a href="#" className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white">Services</a></li>
-                        <li><a href="#" className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white">Contact</a></li>
-                    </ul>
+                <ul className="flex space-x-16">
+                    <li>
+                    <Link
+                        to="Profile"
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                    >
+                        Home
+                    </Link>
+                    </li>
+                    <li>
+                    <Link
+                        to="About"
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                    >
+                        About Me
+                    </Link>
+                    </li>
+                    <li>
+                    <Link
+                        to="portfolio"
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                    >
+                        Portfolio
+                    </Link>
+                    </li>
+                    <li>
+                    <Link
+                        to="services"
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                    >
+                        Services
+                    </Link>
+                    </li>
+                    <li>
+                    <Link
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                        className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+                    >
+                        Contact
+                    </Link>
+                    </li>
+                </ul>
                 </div>
             </nav>
         </header>
