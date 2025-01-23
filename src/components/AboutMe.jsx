@@ -47,7 +47,7 @@ const AboutMe = () => {
                             className="aboutme place-items-center pb-5"
                         >
                             <div className="border-container text-center border-b-2">
-                                <p className="text-6xl font-bold pb-1 text-[#F59E0B]">About Me</p>
+                                <p className="text-6xl font-bold pb-1 text-amber-500">About Me</p>
                             </div>
                             <p className="text-xl max-w-7xl text-center mt-4">
                                 As a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer proficient in React.js and Laravel, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.

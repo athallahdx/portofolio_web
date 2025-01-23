@@ -10,9 +10,9 @@ export default function Profile() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
-      className="h-screen w-screen flex flex-row justify-center items-center space-x-52 pt-14 shadow-lg pb-8"
+      className="h-screen w-screen flex flex-row justify-evenly items-center lg:space-x-[100px] 2xl:space-x-[300px] pt-14 shadow-lg pb-8"
     >
-      <div className="Text-Description text-white font-bold">
+      <div className="Text-Description md:mt-20 2xl:mt-28 text-white font-bold">
         <p className="text-4xl pb-3">Hello, It&apos;s Me</p>
         <p className="text-6xl">Athallah Tsany Satriyaji</p>
         <p className="text-4xl pt-3">
@@ -34,11 +34,21 @@ export default function Profile() {
             <a target="_blank" href="https://www.linkedin.com/in/athallah-tsany-satriyaji-635630222/"><FaLinkedin size={40}/></a>
             <a target="_blank" href="https://www.instagram.com/ath_tsany"><FaInstagram size={40}/></a>
         </div>
+        <a href="">
+          <div className='rounded-full md:text-xl focus:outline-2 hover:bg-amber-600 focus:outline-offset-2 focus:outline-amber-500 active:bg-amber-700 2xl:text-2xl bg-amber-500 mt-10 px-5 py-3 text-center max-w-80'>
+            Download CV
+          </div>
+        </a>
       </div>
 
-      <div className='Image-Profil animate-bounceCustom'>
-        <img className='drop-shadow-2xl max-h-[610px]' src={profil} alt="Profile" />
+      <div className="Image-Profil animate-bounceCustom flex justify-center items-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+        <img
+          className="drop-shadow-2xl lg:max-h-[600px] 2xl:max-h-full w-auto h-auto object-contain"
+          src={profil}
+          alt="Profile"
+        />
       </div>
+
     </motion.div>
   );
 }

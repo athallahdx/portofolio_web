@@ -20,7 +20,7 @@ export default function NavBar() {
     return (
         <header
             className={`fixed w-full transition-all duration-300 ${
-                isScrolled ? "bg-blue-950 shadow-lg bg-opacity-50 backdrop-blur-md" : "bg-transparent"
+                isScrolled ? "bg-blue-950 shadow-lg bg-opacity-80 backdrop-blur-md" : "bg-transparent"
             } border-b border-gray-600 z-50`}
         >
             <nav className="navbar flex justify-between items-center py-6 text-lg leading-7
