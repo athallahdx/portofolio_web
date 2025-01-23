@@ -38,7 +38,7 @@ const AboutMe = () => {
         <>
             <div className="About-Me w-screen mt-12 shadow-lg pb-8">
                 <div className="text-left justify-items-center text-white">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col lg:max-w-[80vw]">
 
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
@@ -47,9 +47,9 @@ const AboutMe = () => {
                             className="aboutme place-items-center pb-5"
                         >
                             <div className="border-container text-center border-b-2">
-                                <p className="text-6xl font-bold pb-1 text-amber-500">About Me</p>
+                                <p className="text-6xl font-bold pb-1"><span>About</span> <span className="text-amber-500">Me</span></p>
                             </div>
-                            <p className="text-xl max-w-7xl text-center mt-4">
+                            <p className="text-xl 2xl:text-2xl  text-center mt-4">
                                 As a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer proficient in React.js and Laravel, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.
                             </p>
                         </motion.div>
@@ -103,7 +103,7 @@ const AboutMe = () => {
                         {/* Data Analyst Section - Slide from Right */}
                         <div 
                             id="slide-right"
-                            className={`dataanalyst flex justify-center max-w-7xl shadow-2xl border border-gray-800 transition-transform duration-700 ease-out ${
+                            className={`dataanalyst flex justify-center shadow-2xl border border-gray-800 transition-transform duration-700 ease-out ${
                                 isDataAnalystVisible ? 'translate-x-0 opacity-100' : 'translate-x-[100vw] opacity-0'
                             }`}
                         >
@@ -124,7 +124,7 @@ const AboutMe = () => {
                         {/* Web Development Section - Slide from Left */}
                         <div 
                             id="slide-left"
-                            className={`webdev mt-5 flex h-auto justify-center max-w-7xl shadow-2xl border border-gray-800 transition-transform duration-700 ease-out ${
+                            className={`webdev mt-5 flex h-auto justify-center shadow-2xl border border-gray-800 transition-transform duration-700 ease-out ${
                                 isWebDevVisible ? 'translate-x-0 opacity-100' : '-translate-x-[100vw] opacity-0'
                             }`}
                         >
