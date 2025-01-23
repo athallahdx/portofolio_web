@@ -1,5 +1,5 @@
 import AboutMe from './components/AboutMe'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar';
 import Profile from './components/Profile'
 import '/src/css/styles.css';
 
