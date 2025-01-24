@@ -10,7 +10,7 @@ export default function Profile() {
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.5 }}
-    className={`h-screen w-screen flex flex-col-reverse mt-0 justify-center lg:flex-row md:justify-evenly items-center lg:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 shadow-lg md:pb-8`}
+    className={`min-h-screen max-h-screen w-screen flex flex-col-reverse mt-0 justify-center lg:flex-row md:justify-evenly items-center lg:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 shadow-lg md:pb-8`}
   >
     <div className="Text-Description text-center lg:text-left lg:mt-20 2xl:mt-28 text-white font-bold flex flex-col justify-center">
       <p className="text-2xl lg:text-4xl pb-1 md:pb-3">Hello, It&apos;s Me</p>

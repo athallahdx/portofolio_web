@@ -26,10 +26,9 @@ const NavLinks = () => (
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); // Initialize as false to avoid SSR issues
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Set initial isMobile value on mount
     setIsMobile(window.innerWidth < 768);
 
     const handleResize = () => {
@@ -54,9 +53,14 @@ export default function NavBar() {
     return isScrolled ? "fixed w-full top-0 mx-auto transition-all duration-300 bg-blue-950 shadow-lg bg-opacity-80 backdrop-blur-md border-b border-gray-600 z-50" : "fixed w-full top-0 mx-auto transition-all duration-300 md:bg-transparent border-b border-gray-600 z-50";
   };
 
+  const getNavBarClass = () => {
+    if(!isMobile) return "navbar flex justify-between items-center py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200" ;
+    return isMenuOpen ? "navbar flex justify-between items-center border-b border-gray-600 py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200" : "navbar flex justify-between items-center py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200";
+  };
+
   return (
     <header className={getHeaderClass()}>
-      <nav className="navbar flex justify-between items-center py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200" role="navigation" aria-label="Main Navigation">
+      <nav className={getNavBarClass()} role="navigation" aria-label="Main Navigation">
         <div className="logo ms-5 md:ms-24">
           <h1 className="text-2xl md:text-3xl font-bold">AthallahTS</h1>
         </div>
@@ -70,7 +74,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col space-y-4 font-normal text-white items-center basis-full flex-wrap pb-3">
+        <div className="md:hidden flex flex-col space-y-4 font-normal text-white items-center basis-full flex-wrap pb-3 pt-3">
           <NavLinks />
         </div>
       )}
