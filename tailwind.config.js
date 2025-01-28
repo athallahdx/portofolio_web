@@ -28,6 +28,9 @@ export default {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to top right, #182655 60%, #1F3B8A )',
       },
+      screens: {
+        'xs': '400px',
+      },
     },
   },
   plugins: [],

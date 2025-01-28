@@ -5,19 +5,19 @@ import { CgMenu } from "react-icons/cg";
 
 const NavLinks = () => (
   <>
-    <Link to="Profile" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+    <Link to="Profile" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
       Home
     </Link>
-    <Link to="About" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+    <Link to="About" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
       About Me
     </Link>
-    <Link to="portfolio" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+    <Link to="portfolio" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
       Portfolio
     </Link>
-    <Link to="services" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+    <Link to="services" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
       Services
     </Link>
-    <Link to="contact" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer">
+    <Link to="contact" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
       Contact
     </Link>
   </>
@@ -29,10 +29,10 @@ export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 801);
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 801);
     };
 
     const handleScroll = () => {
@@ -58,23 +58,23 @@ export default function NavBar() {
     return isMenuOpen ? "navbar flex justify-between items-center border-b border-gray-600 py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200" : "navbar flex justify-between items-center py-4 md:py-6 text-lg leading-7 font-semibold text-slate-700 dark:text-slate-200";
   };
 
-  return (
+  return (      
     <header className={getHeaderClass()}>
       <nav className={getNavBarClass()} role="navigation" aria-label="Main Navigation">
-        <div className="logo ms-5 md:ms-24">
-          <h1 className="text-2xl md:text-3xl font-bold">AthallahTS</h1>
+        <div className="logo ms-5 sm:ms-6 lg:ms-24">
+          <h1 className="text-xl xs:text-2xl md:text-3xl font-bold">AthallahTS</h1>
         </div>
-        <div className="hidden md:flex space-x-16 nav-links me-24">
+        <div className="hidden lg:flex space-x-16 nav-links me-10">
           <NavLinks />
         </div>
-        <div className="menu md:hidden me-8">
+        <div className="menu lg:hidden me-8">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <FaTimes size={30} /> : <CgMenu size={30} />}
+            {isMenuOpen ? <FaTimes className=" text-[28px] xs:text-[30px] sm:text-[40px]"/> : <CgMenu className="text-[28px] xs:text-[30px] sm:text-[40px]" />}
           </button>
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col space-y-4 font-normal text-white items-center basis-full flex-wrap pb-3 pt-3">
+        <div className="lg:hidden flex flex-col space-y-2 xs:space-y-4 sm:space-y-8 font-normal text-white items-center basis-full flex-wrap pb-3 pt-3 sm:pt-4 sm:pb-4">
           <NavLinks />
         </div>
       )}
