@@ -5,19 +5,19 @@ import { CgMenu } from "react-icons/cg";
 
 const NavLinks = () => (
   <>
-    <Link to="Profile" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
+    <Link to="Profile" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Home
     </Link>
-    <Link to="About" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
+    <Link to="About" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       About Me
     </Link>
-    <Link to="portfolio" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
+    <Link to="portfolio" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Portfolio
     </Link>
-    <Link to="services" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
+    <Link to="services" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Services
     </Link>
-    <Link to="contact" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold">
+    <Link to="contact" smooth={true} duration={500} className="hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white cursor-pointer sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Contact
     </Link>
   </>
