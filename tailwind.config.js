@@ -33,7 +33,7 @@ export default {
       },
       screens: {
         'xs': '400px',
-        'mdp' : '790px',
+        'mdp': '790px',
         'lg': '1020px',
       },
       boxShadow: {
@@ -43,6 +43,9 @@ export default {
         'top-lg': '0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1)',
         'top-xl': '0 -20px 25px -5px rgb(0 0 0 / 0.1), 0 -8px 10px -6px rgb(0 0 0 / 0.1)',
         'top-2xl': '0 -25px 50px -12px rgb(0 0 0 / 0.25)',
+        'all-sides-sm': '0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.1), 2px 0 4px -1px rgba(0, 0, 0, 0.1), -2px 0 4px -1px rgba(0, 0, 0, 0.1)',
+        'all-sides-md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 4px 0 6px -1px rgba(0, 0, 0, 0.1), -4px 0 6px -1px rgba(0, 0, 0, 0.1)',
+        'all-sides-lg': '0 6px 8px -1px rgba(0, 0, 0, 0.1), 0 -6px 8px -1px rgba(0, 0, 0, 0.1), 6px 0 8px -1px rgba(0, 0, 0, 0.1), -6px 0 8px -1px rgba(0, 0, 0, 0.1)',
       },
     },
   },

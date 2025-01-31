@@ -71,7 +71,7 @@ import TechStackLogos from "./TechStackLogos";
 
                     <div 
                         id="slide-right"
-                        className={`dataanalystw-fit rounded-xl md:mt-5 flex flex-col items-center lg:items-start lg:flex-row h-auto justify-center shadow-2xl border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
+                        className={`dataanalystw-fit rounded-xl md:mt-5 flex flex-col items-center lg:items-start lg:flex-row h-auto justify-center shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
                             isDataAnalystVisible ? 'lg:translate-x-0 lg:opacity-100' : 'lg:translate-x-[100vw] lg:opacity-0'
                         }`}
                     >
@@ -92,7 +92,7 @@ import TechStackLogos from "./TechStackLogos";
 
                     <div 
                         id="slide-left"
-                        className={`webdev w-fit rounded-xl mt-5 flex flex-col-reverse items-center lg:items-start lg:flex-row h-auto justify-center shadow-2xl border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
+                        className={`webdev w-fit rounded-xl mt-5 flex flex-col-reverse items-center lg:items-start lg:flex-row h-auto justify-center shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
                             isWebDevVisible ? 'lg:translate-x-0 lg:opacity-100' : 'lg:-translate-x-[100vw] lg:opacity-0'
                         }`}
                     >

@@ -1,8 +1,8 @@
-import AboutMe from './components/AboutMe';
-import NavBar from './components/NavBar';
-import Profile from './components/Profile';
-import LatestWork from './components/LatestWork';
-import Footer from './components/Footer';
+import AboutMe from './AboutMe';
+import NavBar from './NavBar';
+import Profile from './Profile';
+import LatestWork from './LatestWork';
+import Footer from './Footer';
 import '/src/css/styles.css';
 
 export default function App() {
