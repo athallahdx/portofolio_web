@@ -75,7 +75,7 @@ export default function Profile() {
       {/* Profile Image */}
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        mt-[50px] xs:mt-6 sm:mt-[0px] mb-4 xs:mb-8 md:mb-0 mdp:mt-0 
+        mt-[50px] xs:mt-6 sm:mt-[0px] mb-4 xs:mb-6 md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl
       ">
         <img
