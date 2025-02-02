@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from "react";
 import TechStackLogos from "./TechStackLogos";
 
-  const AboutMe = () => {
+  export default function AboutMe()  {
     const [isDataAnalystVisible, setIsDataAnalystVisible] = useState(false);
     const [isWebDevVisible, setIsWebDevVisible] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Initial state
@@ -44,7 +44,7 @@ import TechStackLogos from "./TechStackLogos";
 
     return (
         <>
-            <div className="About-Me lg:max-w-screen mt-6 lg:mt-12 pb-8">
+            <div className="About-Me lg:max-w-screen mt-6 lg:mt-8 pb-8">
                 <div className="flex text-left flex-col justify-center text-white items-center lg:max-w-[100vw]">
     
                     <motion.div
@@ -71,7 +71,7 @@ import TechStackLogos from "./TechStackLogos";
 
                     <div 
                         id="slide-right"
-                        className={`dataanalystw-fit rounded-xl md:mt-5 flex flex-col items-center lg:items-start lg:flex-row h-auto justify-center shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
+                        className={`dataanalystw-fit flex flex-col items-center lg:items-start lg:flex-row justify-center max-w-[90vw] h-auto  sm:pb-5 xl:pb-0 2xl:pb-0 shadow-all-sides-lg rounded-xl md:mt-5 border border-gray-800 transition-transform duration-700 ease-out  ${
                             isDataAnalystVisible ? 'lg:translate-x-0 lg:opacity-100' : 'lg:translate-x-[100vw] lg:opacity-0'
                         }`}
                     >
@@ -92,7 +92,7 @@ import TechStackLogos from "./TechStackLogos";
 
                     <div 
                         id="slide-left"
-                        className={`webdev w-fit rounded-xl mt-5 flex flex-col-reverse items-center lg:items-start lg:flex-row h-auto justify-center shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out sm:pb-5 xl:pb-0 2xl:pb-0 ${
+                        className={`webdev flex flex-col-reverse lg:flex-row justify-center items-center lg:items-start w-fit rounded-xl mt-5 sm:pb-5 xl:pb-0 2xl:pb-0 h-auto shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out ${
                             isWebDevVisible ? 'lg:translate-x-0 lg:opacity-100' : 'lg:-translate-x-[100vw] lg:opacity-0'
                         }`}
                     >
@@ -115,5 +115,3 @@ import TechStackLogos from "./TechStackLogos";
         </>
     );
 };
-
-export default AboutMe;
