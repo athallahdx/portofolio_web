@@ -40,7 +40,7 @@ export default function Profile() {
           max-w-3xl font-medium mt-2 xs:mt-6 px-4 lg:px-0 lg:leading-7 
           text-sm xs:text-base sm:text-xl mdp:text-2xl xl:text-xl 2xl:text-xl
         '>
-          I&apos;m a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
+          I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
           skilled in React.js and Laravel. I analyze complex data and build dynamic web applications, ensuring seamless 
           integration and performance.
         </p>

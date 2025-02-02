@@ -1,6 +1,7 @@
 import AboutMe from './AboutMe';
 import NavBar from './NavBar';
 import Profile from './Profile';
+import Service from './Service';
 import LatestWork from './LatestWork';
 import Footer from './Footer';
 import '/src/css/styles.css';
@@ -20,6 +21,9 @@ export default function App() {
         </section>
         <section>
           <LatestWork />
+        </section>
+        <section id='Service'>
+          <Service />
         </section>
         <section>
           <Footer />
