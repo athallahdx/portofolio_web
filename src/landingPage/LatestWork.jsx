@@ -33,7 +33,7 @@ export default function LatestWork() {
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className='Latest-Work-Container lg:max-w-screen mt-3 lg:mt-6 shadow-all-sides-lg text-white flex-col justify-items-center py-3 md:py-6 lg:py-8 xs:space-y-3 md:space-y-6 lg:space-y-8'>
 
             <div className="title text-center">         
-                <p className="text-2xl xs:text-3xl mdp:text-5xl lg:text-6xl font-bold pb-0 inline-block border-b-2">
+                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 inline-block border-b-2">
                     <span>Latest </span> 
                     <span className="text-amber-500">Work</span>
                 </p>

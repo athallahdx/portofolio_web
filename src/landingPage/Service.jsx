@@ -12,7 +12,7 @@ export default function Service() {
         >
             {/* Title */}
             <div className="title text-center space-y-4">
-                <p className="text-2xl xs:text-3xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
+                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
                     <span>Need My </span> 
                     <span className="text-amber-500">Service?</span>
                 </p>

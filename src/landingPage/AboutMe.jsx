@@ -54,7 +54,7 @@ import TechStackLogos from "./TechStackLogos";
                         className="aboutme place-items-center pb-5"
                     >
                         <div className="border-container text-center border-b-2">
-                            <p className="text-2xl xs:text-3xl mdp:text-5xl lg:text-6xl font-bold pb-1">
+                            <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-1">
                                 <span>About</span> 
                                 <span className="text-amber-500"> Me</span>
                             </p>

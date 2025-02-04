@@ -74,7 +74,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center font-medium text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
+        <div className="lg:hidden flex flex-col items-center font-semibold text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
           <NavLinks />
         </div>
       )}
