@@ -12,7 +12,7 @@ export default function Profile() {
       className="
         flex flex-col-reverse justify-center items-center w-screen min-h-screen max-h-screen 
         lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] 
-        pb-3 md:pt-14 md:pb-8 shadow-lg
+        pb-0 md:pt-14 md:pb-8 shadow-lg
       "
     >
       {/* Text Section */}
@@ -71,7 +71,7 @@ export default function Profile() {
               bg-amber-500 hover:bg-amber-600 active:bg-amber-700 
               rounded-full text-center text-sm xs:text-xl mdp:text-3xl lg:text-xl 2xl:text-2xl 
               px-5 py-3 xs:py-3 mdp:max-lg:px-8 mdp:max-lg:py-6 max-w-80 mx-auto 
-              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mt-5 xs:mt-8 sm:mt-10
+              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-5 xs:mt-8 sm:mt-10
             ">
               Download CV
             </div>

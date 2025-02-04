@@ -82,10 +82,10 @@ import TechStackLogos from "./TechStackLogos";
                             <p className="text-lg md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Data Analysis Expertise</p>
 
                             <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
-                                <li> <span className="font-medium">Tableau: </span> Proficient in creating interactive visualizations, dashboard, and infographics to present data insights effectively.</li>
-                                <li> <span className="font-medium">Excel: </span> Proficient in creating interactive dashboards and visualizations to present data insights effectively.</li>
-                                <li> <span className="font-medium">SQL: </span> Experienced in writing complex queries to extract, manipulate, and analyze data from relational databases.</li>
-                                <li> <span className="font-medium">Python: </span> Utilize Python for data cleaning, statistical analysis, and implementing machine learning algorithms.</li>
+                                <li> <span className="font-semibold md:font-medium">Tableau: </span> Proficient in creating interactive visualizations, dashboard, and infographics to present data insights effectively.</li>
+                                <li> <span className="font-semibold md:font-medium">Excel: </span> Proficient in creating interactive dashboards and visualizations to present data insights effectively.</li>
+                                <li> <span className="font-semibold md:font-medium">SQL: </span> Experienced in writing complex queries to extract, manipulate, and analyze data from relational databases.</li>
+                                <li> <span className="font-semibold md:font-medium">Python: </span> Utilize Python for data cleaning, statistical analysis, and implementing machine learning algorithms.</li>
                             </ul>
                         </div>
                     </div>
@@ -100,10 +100,10 @@ import TechStackLogos from "./TechStackLogos";
                             <p className="text-lg md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
 
                             <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
-                                <li><span className="font-medium">React.js: </span> Develop dynamic and responsive user interfaces with React.js, ensuring a seamless user experience.</li>
-                                <li><span className="font-medium">Laravel: </span> Build robust back-end systems using Laravel, focusing on scalability and security.</li>
-                                <li><span className="font-medium">Version Control (Git): </span> Experienced in using Git for version control, facilitating collaboration and code management.</li>
-                                <li><span className="font-medium">RESTful APIs: </span> Skilled in designing and consuming RESTful APIs to enable communication between front-end and back-end systems.</li>
+                                <li><span className="font-semibold md:font-medium">React.js: </span> Develop dynamic and responsive user interfaces with React.js, ensuring a seamless user experience.</li>
+                                <li><span className="font-semibold md:font-medium">Laravel: </span> Build robust back-end systems using Laravel, focusing on scalability and security.</li>
+                                <li><span className="font-semibold md:font-medium">Version Control (Git): </span> Experienced in using Git for version control, facilitating collaboration and code management.</li>
+                                <li><span className="font-semibold md:font-medium">RESTful APIs: </span> Skilled in designing and consuming RESTful APIs to enable communication between front-end and back-end systems.</li>
                             </ul>
                         </div>
                         <div className="picture1 w-full justify-items-center sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
