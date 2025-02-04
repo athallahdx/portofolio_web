@@ -5,16 +5,16 @@ import { CgMenu } from "react-icons/cg";
 
 const NavLinks = () => (
   <>
-    <Link to="Profile" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
+    <Link to="Profile" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Home
     </Link>
-    <Link to="About" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
+    <Link to="About" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       About Me
     </Link>
-    <Link to="Portfolio" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
+    <Link to="Portfolio" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Portfolio
     </Link>
-    <Link to="Service" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
+    <Link to="Service" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl sm:max-lg:font-semibold xl:text-xl">
       Service
     </Link>
   </>
@@ -74,7 +74,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center font-normal text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
+        <div className="lg:hidden flex flex-col items-center font-medium text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
           <NavLinks />
         </div>
       )}
