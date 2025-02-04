@@ -50,8 +50,8 @@ export default function NavBar() {
 
   const getNavBarClass = () => {
     return isMobile && isMenuOpen
-      ? "navbar flex justify-between items-center py-6 md:py-6 border-b border-gray-600 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200"
-      : "navbar flex justify-between items-center py-6 md:py-6 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200";
+      ? "navbar flex justify-between items-center py-3 md:py-6 border-b border-gray-600 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200"
+      : "navbar flex justify-between items-center py-3 md:py-6 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200";
   };
 
   return (
