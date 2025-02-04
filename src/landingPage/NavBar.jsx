@@ -57,13 +57,13 @@ export default function NavBar() {
   return (
     <header className={getHeaderClass()}>
       <nav className={getNavBarClass()} role="navigation" aria-label="Main Navigation">
-        <div className="logo ms-5 sm:ms-6 lg:ms-24">
+        <div className="logo text-white ms-5 sm:ms-6 lg:ms-24">
           <h1 className="text-xl xs:text-2xl md:text-3xl font-bold">AthallahTS</h1>
         </div>
         <div className="hidden lg:flex nav-links space-x-16 me-10">
           <NavLinks />
         </div>
-        <div className="menu lg:hidden me-8">
+        <div className="menu text-white lg:hidden me-8">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? (
               <FaTimes className="text-[28px] xs:text-[30px] sm:text-[40px]" />
