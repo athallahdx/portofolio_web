@@ -20,13 +20,13 @@ export default function Profile() {
         flex flex-col justify-center text-white font-bold text-center lg:text-left 
         xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28
       ">
-        <p className="text-xl xs:text-3xl sm:text-3xl mdp:text-4xl xl:text-3xl 2xl:text-5xl pb-1 md:pb-3">
+        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl xl:text-3xl 2xl:text-5xl pb-1 md:pb-3">
           Hello, It&apos;s Me
         </p>
-        <p className="text-2xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
+        <p className="text-3xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
           Athallah Tsany Satriyaji
         </p>
-        <p className="text-xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3">
+        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3">
           And I&apos;m a{' '}
           <TypeAnimation
             sequence={['Data Analyst', 1000, 'Web Developer', 1000]}
