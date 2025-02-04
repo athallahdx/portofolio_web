@@ -50,8 +50,8 @@ export default function NavBar() {
 
   const getNavBarClass = () => {
     return isMobile && isMenuOpen
-      ? "navbar flex justify-between items-center py-4 md:py-6 border-b border-gray-600 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200"
-      : "navbar flex justify-between items-center py-4 md:py-6 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200";
+      ? "navbar flex justify-between items-center py-6 md:py-6 border-b border-gray-600 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200"
+      : "navbar flex justify-between items-center py-6 md:py-6 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200";
   };
 
   return (
@@ -74,7 +74,7 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center font-normal text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-2 xs:space-y-4 sm:space-y-8">
+        <div className="lg:hidden flex flex-col items-center font-normal text-white basis-full flex-wrap pb-3 pt-3 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
           <NavLinks />
         </div>
       )}
