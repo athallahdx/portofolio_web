@@ -81,7 +81,7 @@ export default function Profile() {
         <img
           className="
             object-contain drop-shadow-2xl h-auto lg:w-auto 
-            max-w-[60vw] xs:max-w-[80vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
+            max-w-[55vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
             lg:max-h-[600px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
           "
           src={profil}
