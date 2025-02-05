@@ -6,7 +6,7 @@ import LatestWork from './landingPage/LatestWork';
 import Footer from './landingPage/Footer';
 import './css/styles.css';
 
-export default function App() {
+export default function LandingPageApp() {
   return (
     <>
       <div id='base' className='flex flex-col bg-custom-gradient min-h-screen'>
