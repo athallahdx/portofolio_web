@@ -4,6 +4,7 @@ import webproject3 from '../assets/ilabs.png';
 import dataproject from '../assets/dataDashboard.png';
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
 
 
 export default function LatestWork() {
@@ -66,21 +67,20 @@ export default function LatestWork() {
                             {project.description}
                         </p>
                         {!isMobile && (
-                            <a
-                            href={project.link}
+                            <Link to="/portofolio"
                             className="hidden sm:block bg-white md:mt-8 mdp:mt-8 lg:mt-5 2xl:mt-10 text-black px-4 py-2 rounded-lg hover:bg-gray-300 text-2xl transition"
                             >
                             <FiExternalLink className="hidden sm:block xs:text-xs md:text-4xl xl:text-2xl 2xl:text-3xl" />
-                            </a>
+                            </Link>
                         )}
                         </div>
                     </motion.div>
                     );
 
                     return isMobile ? (
-                    <a key={index} href={project.link} className="block w-full">
+                    <Link to="/portofolio" key={index} className="block w-full">
                         {ProjectCard}
-                    </a>
+                    </Link >
                     ) : (
                     <div key={index}>{ProjectCard}</div>
                     );
@@ -88,9 +88,9 @@ export default function LatestWork() {
             </div>
 
             <div className='button rounded-full text-center text-sm xs:text-lg mdp:text-2xl xl:text-2xl focus:outline-2 hover:bg-amber-600 focus:outline-offset-2 focus:outline-amber-500 active:bg-amber-700 bg-amber-500 mt-2 xs:mt-6 sm:mt-10 px-3 py-3 xs:py-2 mdp:max-lg:px-3 mdp:max-lg:py-3 max-w-80 md:mx-auto mb-3 font-bold md:font-semibold'>
-                <a href="portfolio">
-                    View All Portofolio
-                </a>
+            <Link to="/portofolio"> {/* Use the 'to' prop for routing */}
+                View All Portofolio
+            </Link>
             </div>
         </motion.div>
         </>

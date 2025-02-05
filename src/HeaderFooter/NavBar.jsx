@@ -1,22 +1,24 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from 'react-router';
 import { FaTimes } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg";
 
+
 const NavLinks = () => (
   <>
-    <Link to="Profile" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+    <ScrollLink to="Profile" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
       Home
-    </Link>
-    <Link to="About" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+    </ScrollLink>
+    <ScrollLink to="About" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
       About Me
+    </ScrollLink>
+    <Link to="/portofolio" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+      Portofolio
     </Link>
-    <Link to="Portfolio" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
-      Portfolio
-    </Link>
-    <Link to="Service" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+    <ScrollLink to="Service" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
       Service
-    </Link>
+    </ScrollLink>
   </>
 );
 
