@@ -88,7 +88,7 @@ export default function LatestWork() {
             </div>
 
             <div className='button rounded-full text-center text-sm xs:text-lg mdp:text-2xl xl:text-2xl focus:outline-2 hover:bg-amber-600 focus:outline-offset-2 focus:outline-amber-500 active:bg-amber-700 bg-amber-500 mt-2 xs:mt-6 sm:mt-10 px-3 py-3 xs:py-2 mdp:max-lg:px-3 mdp:max-lg:py-3 max-w-80 md:mx-auto mb-3 font-bold md:font-semibold'>
-                <a href="Portfolio">
+                <a href="portfolio">
                     View All Portofolio
                 </a>
             </div>
