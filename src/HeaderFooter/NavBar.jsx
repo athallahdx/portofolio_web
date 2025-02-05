@@ -1,26 +1,54 @@
+import { useLocation, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from 'react-router';
+import { Link } from "react-router";
 import { FaTimes } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg";
 
+const NavLinks = () => {
+  const location = useLocation(); 
+  const navigate = useNavigate(); 
 
-const NavLinks = () => (
-  <>
-    <ScrollLink to="Profile" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
-      Home
-    </ScrollLink>
-    <ScrollLink to="About" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
-      About Me
-    </ScrollLink>
-    <Link to="/portofolio" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
-      Portofolio
-    </Link>
-    <ScrollLink to="Service" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white  text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
-      Service
-    </ScrollLink>
-  </>
-);
+  const handleScrollNav = (section) => {
+    if (location.pathname !== "/") {
+      navigate("/"); 
+      setTimeout(() => {
+        document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+      }, 100); 
+    } else {
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <>
+      <ScrollLink
+        to="Profile"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl"
+      >
+        Home
+      </ScrollLink>
+
+      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl">
+        About Me
+      </button>
+
+      <Link
+        to="/portofolio"
+        className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl"
+      >
+        Portofolio
+      </Link>
+
+      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl">
+        Service
+      </button>
+    </>
+  );
+};
+
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
