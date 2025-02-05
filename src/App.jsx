@@ -4,7 +4,7 @@ import Profile from './landingPage/Profile';
 import Service from './landingPage/Service';
 import LatestWork from './landingPage/LatestWork';
 import Footer from './landingPage/Footer';
-import '/src/css/styles.css';
+import './css/styles.css';
 
 export default function App() {
   return (
