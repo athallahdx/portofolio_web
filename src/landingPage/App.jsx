@@ -1,10 +1,10 @@
-import AboutMe from './landingPage/AboutMe';
-import NavBar from './landingPage/NavBar';
-import Profile from './landingPage/Profile';
-import Service from './landingPage/Service';
-import LatestWork from './landingPage/LatestWork';
-import Footer from './landingPage/Footer';
-import './css/styles.css';
+import AboutMe from './AboutMe';
+import NavBar from './NavBar';
+import Profile from './Profile';
+import Service from './Service';
+import LatestWork from './LatestWork';
+import Footer from './Footer';
+import '../css/styles.css';
 
 export default function LandingPageApp() {
   return (
