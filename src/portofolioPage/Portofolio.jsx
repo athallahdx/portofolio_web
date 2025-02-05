@@ -1,4 +1,4 @@
-import NavBar from './NavBar';
+import NavBar from '../landingPage/NavBar';
 import { GrLinkPrevious } from "react-icons/gr";
 
 export default function Portofolio() {
