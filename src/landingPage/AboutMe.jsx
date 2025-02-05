@@ -72,7 +72,7 @@ import TechStackLogos from "./TechStackLogos";
                     <div 
                         id="slide-right"
                         className={`dataanalystw-fit flex flex-col lg:flex-row justify-center items-center lg:items-start w-fit rounded-xl mt-5 sm:pb-5 xl:pb-0 2xl:pb-0 h-auto shadow-all-sides-lg border border-gray-800 max-w-[90vw] transition-transform duration-700 ease-out ${
-                            isDataAnalystVisible ? 'lg:translate-x-0 lg:opacity-100' : 'lg:translate-x-[100vw] lg:opacity-0'
+                            isDataAnalystVisible ? 'lg:translate-x-100 lg:opacity-100' : 'lg:translate-x-[100vw] lg:opacity-0'
                         }`}
                     >
                         <div className="picture1 w-full justify-items-center sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
