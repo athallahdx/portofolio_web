@@ -25,7 +25,7 @@ export default function Profile() {
         <p className="text-3xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
           Athallah Tsany Satriyaji
         </p>
-        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3 pb-3">
+        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3 pb-0">
           And I&apos;m a{' '}
           <TypeAnimation
             sequence={['Data Analyst', 1000, 'Web Developer', 1000]}
@@ -37,7 +37,7 @@ export default function Profile() {
         </p>
         <p className='
           max-w-3xl font-medium mt-2 xs:mt-6 px-4 lg:px-0 lg:leading-7 
-          text-base xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pb-3
+          text-base xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pt-0
         '>
           <span className='hidden lg:inline'>
             I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
@@ -51,7 +51,7 @@ export default function Profile() {
         </p>
         {/* Social Links */}
         <div className='
-          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-3
+          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-1
         '>
           <a target="_blank" href="https://github.com/athallahdx">
             <FaGithub className='text-[38px] xs:text-[44px] mdp:text-[55px]' />
@@ -70,7 +70,7 @@ export default function Profile() {
               bg-amber-500 hover:bg-amber-600 active:bg-amber-700 
               rounded-full text-center text-sm xs:text-xl mdp:text-xl lg:text-lg 2xl:text-2xl 
               px-5 py-3 xs:py-3 mdp:max-lg:px-8 mdp:max-lg:py-6 max-w-80 mx-auto 
-              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-5 xs:mt-8 sm:mt-10
+              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-3 xs:mt-8 sm:mt-10
             ">
               Download CV
             </div>
