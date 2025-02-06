@@ -51,16 +51,16 @@ export default function Profile() {
         </p>
         {/* Social Links */}
         <div className='
-          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-5
+          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-3
         '>
           <a target="_blank" href="https://github.com/athallahdx">
-            <FaGithub className='text-[35px] xs:text-[44px] mdp:text-[55px]' />
+            <FaGithub className='text-[38px] xs:text-[44px] mdp:text-[55px]' />
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/athallah-tsany-satriyaji-635630222/">
-            <FaLinkedin className='text-[35px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaLinkedin className='text-[38px] xs:text-[44px] mdp:text-[55px]'/>
           </a>
           <a target="_blank" href="https://www.instagram.com/ath_tsany">
-            <FaInstagram className='text-[35px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaInstagram className='text-[38px] xs:text-[44px] mdp:text-[55px]'/>
           </a>
         </div>
         {/* Download CV Button */}
@@ -68,7 +68,7 @@ export default function Profile() {
           <a href="">
             <div className="
               bg-amber-500 hover:bg-amber-600 active:bg-amber-700 
-              rounded-full text-center text-sm xs:text-xl mdp:text-3xl lg:text-xl 2xl:text-2xl 
+              rounded-full text-center text-sm xs:text-xl mdp:text-xl lg:text-lg 2xl:text-2xl 
               px-5 py-3 xs:py-3 mdp:max-lg:px-8 mdp:max-lg:py-6 max-w-80 mx-auto 
               focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-5 xs:mt-8 sm:mt-10
             ">
@@ -80,7 +80,7 @@ export default function Profile() {
 
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        pb-5 sm:mt-[0px]  md:mb-0 mdp:mt-0 
+        pb-3 sm:mt-[0px]  md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
