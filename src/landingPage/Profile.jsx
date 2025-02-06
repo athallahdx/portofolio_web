@@ -12,7 +12,7 @@ export default function Profile() {
       className="
         flex flex-col-reverse justify-center items-center w-screen min-h-screen max-h-screen 
         lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] 
-        pb-0 md:pt-14 md:pb-8 shadow-lg
+        pb-0 mb-0 md:pt-14 md:pb-8 shadow-lg
       "
     >
       {/* Text Section */}
@@ -20,7 +20,7 @@ export default function Profile() {
         flex flex-col justify-center text-white font-bold text-center lg:text-left 
         xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28
       ">
-        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl xl:text-3xl 2xl:text-5xl pb-1 md:pb-3">
+        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pb-1 md:pb-3">
           Hello, It&apos;s Me
         </p>
         <p className="text-3xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
@@ -81,7 +81,7 @@ export default function Profile() {
 
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        mt-[30px] xs:mt-3 sm:mt-[0px] mb-4 xs:mb-8 md:mb-0 mdp:mt-0 
+        mt-3 xs:mt-3 sm:mt-[0px] mb-4 xs:mb-8 md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl
       ">
         <img
