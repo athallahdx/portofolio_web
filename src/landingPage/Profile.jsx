@@ -80,13 +80,13 @@ export default function Profile() {
 
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        pb-3 sm:mt-[0px]  md:mb-0 mdp:mt-0 
+        pb-3 mt-0 sm:mt-[0px] md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
           className="
             object-contain drop-shadow-2xl h-auto lg:w-auto 
-            max-w-[60vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
+            max-w-[50vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
             lg:max-h-[600px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
           "
           src={profil}
