@@ -5,8 +5,8 @@ import { Link } from 'react-router';
 export default function Portofolio() {
     return (
         <div className="flex flex-col justify-center items-center w-full min-h-[94vh] text-center text-white px-4">
-            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold border-b-4 pb-3">
-                <span>Coming </span>
+            <p className="fle flex-col md:flex-row text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold border-b-4 pb-1 md:pb-3">
+                <span>Coming</span>
                 <span className="text-amber-500">Soon</span>
             </p>
 

@@ -11,7 +11,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* PageTemplate wraps the layout */}
         <Route path='/' element={<PageTemplate />}>
           <Route index element={<LandingPageApp />} />
           <Route path='portofolio' element={<Portofolio />} />
