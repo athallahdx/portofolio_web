@@ -10,14 +10,14 @@ export default function Profile() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="
-        flex flex-col-reverse space-y-20 justify-center items-center w-screen min-h-screen max-h-screen 
+        flex flex-col-reverse space-y-10 justify-center items-center w-screen min-h-screen max-h-screen 
         lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg
       "
     >
       {/* Text Section */}
       <div className="
         flex flex-col justify-center text-white font-bold text-center lg:text-left 
-        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28
+        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28 pt-5
       ">
         <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pb-1 md:pb-3">
           Hello, It&apos;s Me
@@ -25,7 +25,7 @@ export default function Profile() {
         <p className="text-3xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
           Athallah Tsany Satriyaji
         </p>
-        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3">
+        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3 pb-3">
           And I&apos;m a{' '}
           <TypeAnimation
             sequence={['Data Analyst', 1000, 'Web Developer', 1000]}
@@ -37,7 +37,7 @@ export default function Profile() {
         </p>
         <p className='
           max-w-3xl font-medium mt-2 xs:mt-6 px-4 lg:px-0 lg:leading-7 
-          text-sm xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl
+          text-base xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pb-3
         '>
           <span className='hidden lg:inline'>
             I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
@@ -51,16 +51,16 @@ export default function Profile() {
         </p>
         {/* Social Links */}
         <div className='
-          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8
+          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-5
         '>
           <a target="_blank" href="https://github.com/athallahdx">
-            <FaGithub className='text-[32px] xs:text-[44px] mdp:text-[55px]' />
+            <FaGithub className='text-[35px] xs:text-[44px] mdp:text-[55px]' />
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/athallah-tsany-satriyaji-635630222/">
-            <FaLinkedin className='text-[32px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaLinkedin className='text-[35px] xs:text-[44px] mdp:text-[55px]'/>
           </a>
           <a target="_blank" href="https://www.instagram.com/ath_tsany">
-            <FaInstagram className='text-[32px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaInstagram className='text-[35px] xs:text-[44px] mdp:text-[55px]'/>
           </a>
         </div>
         {/* Download CV Button */}
@@ -80,13 +80,13 @@ export default function Profile() {
 
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        mt-3 xs:mt-3 sm:mt-[0px] mb-4 xs:mb-8 md:mb-0 mdp:mt-0 
+        pb-5 sm:mt-[0px]  md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
           className="
             object-contain drop-shadow-2xl h-auto lg:w-auto 
-            max-w-[55vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
+            max-w-[60vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] 
             lg:max-h-[600px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
           "
           src={profil}
