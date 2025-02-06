@@ -10,9 +10,8 @@ export default function Profile() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="
-        flex flex-col-reverse justify-center items-center w-screen min-h-screen max-h-screen 
-        lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] 
-        pb-0 mb-0 md:pt-14 md:pb-8 shadow-lg
+        flex flex-col-reverse space-y-20 justify-center items-center w-screen min-h-screen max-h-screen 
+        lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg
       "
     >
       {/* Text Section */}
@@ -38,7 +37,7 @@ export default function Profile() {
         </p>
         <p className='
           max-w-3xl font-medium mt-2 xs:mt-6 px-4 lg:px-0 lg:leading-7 
-          text-sm xs:text-base sm:text-xl mdp:text-2xl xl:text-xl 2xl:text-xl
+          text-sm xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl
         '>
           <span className='hidden lg:inline'>
             I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
@@ -82,7 +81,7 @@ export default function Profile() {
       <div className="
         flex justify-center items-center animate-bounceCustom 
         mt-3 xs:mt-3 sm:mt-[0px] mb-4 xs:mb-8 md:mb-0 mdp:mt-0 
-        max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl
+        max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
           className="

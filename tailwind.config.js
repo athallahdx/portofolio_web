@@ -32,7 +32,9 @@ export default {
         'footer-color': '#0F1835',
       },
       screens: {
-        'xs': '400px',
+        'msm' : '320',
+        'mmed': '375px',
+        'mlg': '400px',
         'mdp': '790px',
         'lg': '1020px',
       },
