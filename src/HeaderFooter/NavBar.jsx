@@ -31,7 +31,7 @@ const NavLinks = () => {
         Home
       </ScrollLink>
 
-      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl">
+      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
         About Me
       </button>
 
@@ -42,7 +42,7 @@ const NavLinks = () => {
         Portofolio
       </Link>
 
-      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl">
+      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
         Service
       </button>
     </>

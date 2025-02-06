@@ -54,7 +54,7 @@ import TechStackLogos from "./TechStackLogos";
                         className="aboutme place-items-center pb-5"
                     >
                         <div className="border-container text-center border-b-2">
-                            <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-1">
+                            <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 lg:pb-1">
                                 <span>About</span> 
                                 <span className="text-amber-500"> Me</span>
                             </p>
@@ -79,7 +79,7 @@ import TechStackLogos from "./TechStackLogos";
                             <img src={data1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-full lg:w-auto" alt="" />
                         </div>
                         <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-12">
-                            <p className="text-lg md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Data Analysis Expertise</p>
+                            <p className="text-2xl md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Data Analysis Expertise</p>
 
                             <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
                                 <li> <span className="font-bold md:font-medium">Tableau: </span> Proficient in creating interactive visualizations, dashboard, and infographics to present data insights effectively.</li>
@@ -98,7 +98,7 @@ import TechStackLogos from "./TechStackLogos";
                         }`}
                     >
                         <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-12">
-                            <p className="text-lg md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
+                            <p className="text-2xl md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
 
                             <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
                                 <li><span className="font-bold md:font-medium">React.js: </span> Develop dynamic and responsive user interfaces with React.js, ensuring a seamless user experience.</li>
