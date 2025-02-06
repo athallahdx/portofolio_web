@@ -17,7 +17,7 @@ export default function Profile() {
       {/* Text Section */}
       <div className="
         flex flex-col justify-center text-white font-bold text-center lg:text-left 
-        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28 pt-5
+        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28 pt-3
       ">
         <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pb-1 md:pb-3">
           Hello, It&apos;s Me
@@ -80,7 +80,7 @@ export default function Profile() {
 
       <div className="
         flex justify-center items-center animate-bounceCustom 
-        pb-3 mt-0 sm:mt-[0px] md:mb-0 mdp:mt-0 
+        pb-2 pt-3 sm:mt-[0px] md:mb-0 mdp:mt-0 
         max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
