@@ -16,7 +16,7 @@ export default function Profile() {
     >
       {/* Text Section */}
       <div className="
-        flex flex-col justify-center text-white font-bold text-center lg:text-left 
+        flex flex-col justify-center text-white font-extrabold text-center lg:text-left 
         xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28 pt-3
       ">
         <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pb-1 md:pb-3">
