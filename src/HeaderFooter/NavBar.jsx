@@ -26,23 +26,23 @@ const NavLinks = () => {
         to="Profile"
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl"
+        className="cursor-pointer hover:text-gray-300 text-xl"
       >
         Home
       </ScrollLink>
 
-      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl ">
         About Me
       </button>
 
       <Link
         to="/portofolio"
-        className="cursor-pointer hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl"
+        className="cursor-pointer hover:text-gray-300 text-xl"
       >
         Portofolio
       </Link>
 
-      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl sm:max-lg:text-2xl font-semibold sm:max-lg:font-semibold xl:text-xl">
+      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl">
         Service
       </button>
     </>
