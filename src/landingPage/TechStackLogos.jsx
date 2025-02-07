@@ -7,22 +7,22 @@ const TechStackLogos = () => {
     return (
       <>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <FaReact className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <FaReact className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
-          <FaLaravel className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <FaLaravel className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
-          <IoLogoTableau className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <IoLogoTableau className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}>
-          <FaPython className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <FaPython className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>
-          <FaFileExcel className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <FaFileExcel className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
-          <PiFileSqlDuotone className='text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
+          <PiFileSqlDuotone className='text-[27px] mbm:text-[30px] xs:text-[38px] sm:text-[50px] xl:text-[55px]' />
         </motion.div>
       </>
     );

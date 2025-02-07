@@ -10,21 +10,21 @@ export default function Profile() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="
-        flex flex-col-reverse space-y-5 justify-center items-center lg:justify-center lg:items-center w-screen max-h-screen mt-20 pb-6 lg:flex-row md:justify-evenly lg:min-h-screen lg:mt-0 lg:pb-5 lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg
+        flex flex-col-reverse space-y-5 justify-center items-center lg:justify-center lg:items-center w-screen max-h-screen mt-20 pb-6 lg:flex-row md:justify-evenly lg:min-h-screen lg:mt-0 lg:pb-5 lg:space-x-[9vw] lg:px-8 xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg 
       "
     >
       {/* Text Section */}
       <div className="
         flex flex-col justify-center text-white font-extrabold text-center lg:text-left 
-        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28
+        xl:me-20 lg:mt-36 xl:ms-8 2xl:mt-28
       ">
-        <p className="text-sstitle pb-0 mbm:pb-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl 2xl:text-5xl md:pb-3">
+        <p className="text-sstitle pb-0 mbm:pb-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl lg:text-4xl 2xl:text-5xl md:pb-3">
           Hello, It&apos;s Me
         </p>
-        <p className="text-sbtitle pt-0 mbm:text-3xl mbl:text-3xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
+        <p className="text-sbtitle pt-0 mbm:text-3xl mbl:text-3xl sm:text-4xl mdp:text-6xl lg:text-5xl 2xl:text-7xl">
           Athallah Tsany Satriyaji
         </p>
-        <p className="text-sstitle pt-0 mbm:pt-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl 2xl:text-5xl  md:pt-3 pb-0">
+        <p className="text-sstitle pt-0 mbm:pt-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl lg:text-4xl  2xl:text-5xl  md:pt-3 pb-0">
           And I&apos;m a{' '}
           <TypeAnimation
             sequence={['Data Analyst', 1000, 'Web Developer', 1000]}
@@ -35,7 +35,7 @@ export default function Profile() {
           />
         </p>
         <p className='
-          max-w-3xl font-medium mt-2 mbl:mt-6 px-4 lg:px-0 lg:leading-7 
+          max-w-3xl font-medium mt-2 lg mbl:mt-6 px-4 lg:px-0 lg:leading-7 
           text-base mbl:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pt-0
         '>
           <span className='hidden lg:inline'>
@@ -47,6 +47,7 @@ export default function Profile() {
             I&apos;m a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
             skilled in React.js and Laravel.
           </span>
+
         </p>
         {/* Social Links */}
         <div className='
@@ -86,7 +87,7 @@ export default function Profile() {
           className="
             object-contain drop-shadow-2xl h-auto lg:w-auto 
             max-w-[60vw] mbl:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] lg:mt-28
-            lg:max-h-[550px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
+            lg:max-h-[500px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
           "
           src={profil}
           alt="Profile"

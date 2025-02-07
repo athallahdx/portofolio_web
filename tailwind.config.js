@@ -36,11 +36,11 @@ export default {
         'footer-color': '#0F1835',
       },
       screens: {
-        'mbs' : '320',
+        'mbs' : '320px',
         'mbm': '375px',
         'mbl': '400px',
         'mdp': '790px',
-        'lg': '1020px',
+        'lg': '1024px',
       },
       boxShadow: {
         'top-xs': '0 -1px 2px 0 rgb(0 0 0 / 0.05)',
