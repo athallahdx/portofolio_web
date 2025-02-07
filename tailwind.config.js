@@ -19,6 +19,10 @@ export default {
           '50%': { transform: 'translateY(-20px)' },
         },
       },
+      fontSize: {
+          'sstitle': ['1.5rem', {lineHeight: '2rem'}],
+          'sbtitle': ['1.75rem', {lineHeight: '2.25rem'}],
+      },
       fontFamily: {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
         inter: ['Inter', ...defaultTheme.fontFamily.sans],

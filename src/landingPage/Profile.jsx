@@ -16,15 +16,15 @@ export default function Profile() {
       {/* Text Section */}
       <div className="
         flex flex-col justify-center text-white font-extrabold text-center lg:text-left 
-        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28 pt-3
+        xl:me-20 lg:mt-20 xl:ms-8 2xl:mt-28
       ">
-        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pb-1 md:pb-3">
+        <p className="text-sstitle pb-0 mbm:pb-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl 2xl:text-5xl md:pb-3">
           Hello, It&apos;s Me
         </p>
-        <p className="text-3xl xs:text-4xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
+        <p className="text-sbtitle pt-0 mbm:text-3xl mbl:text-3xl sm:text-4xl mdp:text-6xl 2xl:text-7xl">
           Athallah Tsany Satriyaji
         </p>
-        <p className="text-2xl xs:text-3xl sm:text-3xl mdp:text-4xl 2xl:text-5xl pt-1 md:pt-3 pb-0">
+        <p className="text-sstitle pt-0 mbm:pt-1 mbm:text-2xl mbl:text-2xl sm:text-3xl mdp:text-4xl 2xl:text-5xl  md:pt-3 pb-0">
           And I&apos;m a{' '}
           <TypeAnimation
             sequence={['Data Analyst', 1000, 'Web Developer', 1000]}
@@ -35,8 +35,8 @@ export default function Profile() {
           />
         </p>
         <p className='
-          max-w-3xl font-medium mt-2 xs:mt-6 px-4 lg:px-0 lg:leading-7 
-          text-base xs:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pt-0
+          max-w-3xl font-medium mt-2 mbl:mt-6 px-4 lg:px-0 lg:leading-7 
+          text-base mbl:text-base sm:text-xl mdp:text-xl lg:text-lg 2xl:text-xl pt-0
         '>
           <span className='hidden lg:inline'>
             I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 
@@ -50,16 +50,16 @@ export default function Profile() {
         </p>
         {/* Social Links */}
         <div className='
-          flex flex-row justify-center lg:justify-start space-x-10 mt-4 xs:mt-8 mb-1
+          flex flex-row justify-center lg:justify-start space-x-10 mt-4 mbl:mt-8 mb-1
         '>
           <a target="_blank" href="https://github.com/athallahdx">
-            <FaGithub className='text-[38px] xs:text-[44px] mdp:text-[55px]' />
+            <FaGithub className='text-[38px] mbl:text-[44px] mdp:text-[55px]' />
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/athallah-tsany-satriyaji-635630222/">
-            <FaLinkedin className='text-[38px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaLinkedin className='text-[38px] mbl:text-[44px] mdp:text-[55px]'/>
           </a>
           <a target="_blank" href="https://www.instagram.com/ath_tsany">
-            <FaInstagram className='text-[38px] xs:text-[44px] mdp:text-[55px]'/>
+            <FaInstagram className='text-[38px] mbl:text-[44px] mdp:text-[55px]'/>
           </a>
         </div>
         {/* Download CV Button */}
@@ -67,9 +67,9 @@ export default function Profile() {
           <a href="">
             <div className="
               bg-amber-500 hover:bg-amber-600 active:bg-amber-700 
-              rounded-full text-center text-sm xs:text-xl mdp:text-xl lg:text-lg 2xl:text-2xl 
-              px-5 py-3 xs:py-3 mdp:max-lg:px-8 mdp:max-lg:py-6 max-w-80 mx-auto 
-              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-4 xs:mt-8 sm:mt-10
+              rounded-full text-center text-sm mbl:text-xl mdp:text-xl lg:text-lg 2xl:text-2xl 
+              px-5 py-3 mbl:py-3 mdp:max-lg:px-8 mdp:max-lg:py-6 max-w-80 mx-auto 
+              focus:outline-2 focus:outline-offset-2 focus:outline-amber-500 mb-0 mt-4 mbl:mt-8 sm:mt-10
             ">
               Download CV
             </div>
@@ -80,12 +80,12 @@ export default function Profile() {
       <div className="
         flex justify-center items-center animate-bounceCustom 
         pb-2 pt-0 sm:mt-[0px] md:mb-0 mdp:mt-0
-        max-w-xs sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
+        max-w-mbl sm:max-w-lg mdp:max-w-xl lg:max-w-xl xl:max-w-2xl lg:pb-20 
       ">
         <img
           className="
             object-contain drop-shadow-2xl h-auto lg:w-auto 
-            max-w-[60vw] xs:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] lg:mt-28
+            max-w-[60vw] mbl:max-w-[70vw] sm:max-w-[40vw] mdp:max-w-[50vw] lg:mt-28
             lg:max-h-[550px] xl:max-w-[30vw] 2xl:max-h-full xl:me-16 2xl:me-20
           "
           src={profil}

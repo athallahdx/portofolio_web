@@ -64,7 +64,7 @@ import TechStackLogos from "./TechStackLogos";
                         </p>
                     </motion.div>
 
-                    <div className="logos flex space-x-8 sm:space-x-16 lg:space-x-36 mt-5 mb-8 sm:mb-0 lg:mb-4 justify-center">
+                    <div className="logos flex space-x-8 sm:space-x-16 lg:space-x-36 mt-3 mb-3 sm:mb-0 lg:mb-4 justify-center">
                         <TechStackLogos /> 
                     </div>
 
