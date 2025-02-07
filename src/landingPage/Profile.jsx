@@ -10,8 +10,7 @@ export default function Profile() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="
-        flex flex-col-reverse space-y-5 justify-center items-center w-screen min-h-screen max-h-screen 
-        lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg
+        flex flex-col-reverse space-y-5 justify-center items-center lg:justify-center lg:items-center w-screen min-h-screen max-h-screen lg:flex-row md:justify-evenly lg:space-x-[5vw] xl:space-x-[5vw] 2xl:space-x-[17vw] md:pt-14 md:pb-8 shadow-lg 
       "
     >
       {/* Text Section */}
