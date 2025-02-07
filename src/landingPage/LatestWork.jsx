@@ -35,7 +35,7 @@ export default function LatestWork() {
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className='Latest-Work-Container lg:max-w-screen mt-3 lg:mt-6 shadow-all-sides-lg text-white flex-col justify-items-center py-3 md:py-6 lg:py-8 xs:space-y-3 md:space-y-6 lg:space-y-8'>
 
             <div className="title text-center">         
-                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 inline-block border-b-2">
+                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
                     <span>Latest </span> 
                     <span className="text-amber-500">Work</span>
                 </p>
@@ -60,12 +60,13 @@ export default function LatestWork() {
                         />
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-3xl text-center xs:text-xl md:text-4xl lg:text-xl 2xl:text-3xl font-bold mb-2">
+                        <h3 className="text-3xl text-center xs:text-xl md:text-4xl lg:text-2xl 2xl:text-3xl font-bold mb-2">
                             {project.title}
                         </h3>
-                        <p className="hidden xs:block xs:text-x md:text-xl mdp:text-2xl lg:text-base 2xl:text-lg text-center px-5">
+                        <p className="hidden md:block md:text-2xl text-center lg:text-base 2xl:text-xl px-5">
                             {project.description}
                         </p>
+
                         {!isMobile && (
                             <Link to="/portofolio"
                             className="hidden sm:block bg-white md:mt-8 mdp:mt-8 lg:mt-5 2xl:mt-10 text-black px-4 py-2 rounded-lg hover:bg-gray-300 text-2xl transition"
