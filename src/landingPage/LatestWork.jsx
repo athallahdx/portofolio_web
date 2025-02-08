@@ -35,7 +35,7 @@ export default function LatestWork() {
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className='Latest-Work-Container lg:max-w-screen mt-3 lg:mt-6 shadow-all-sides-lg text-white flex-col justify-items-center py-3 md:py-6 lg:py-8 xs:space-y-3 md:space-y-6 lg:space-y-8'>
 
             <div className="title text-center">         
-                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
+                <p className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
                     <span>Latest </span> 
                     <span className="text-amber-500">Work</span>
                 </p>
@@ -88,7 +88,7 @@ export default function LatestWork() {
                 })}
             </div>
 
-            <div className='button rounded-full text-center text-sm xs:text-lg mdp:text-2xl xl:text-2xl focus:outline-2 hover:bg-amber-600 focus:outline-offset-2 focus:outline-amber-500 active:bg-amber-700 bg-amber-500 mt-2 xs:mt-6 sm:mt-10 px-3 py-3 xs:py-2 mdp:max-lg:px-3 mdp:max-lg:py-3 max-w-80 md:mx-auto mb-3 font-bold md:font-semibold'>
+            <div className='button rounded-full text-center text-sm xs:text-lg md:text-2xl mdp:text-3xl xl:text-2xl focus:outline-2 hover:bg-amber-600 focus:outline-offset-2 focus:outline-amber-500 active:bg-amber-700 bg-amber-500 mt-2 xs:mt-6 sm:mt-10 px-3 py-3 xs:py-2 mdp:max-lg:px-3 mdp:max-lg:py-3 max-w-80 md:mx-auto mb-3 font-bold md:font-semibold'>
             <Link to="/portofolio"> {/* Use the 'to' prop for routing */}
                 View All Portofolio
             </Link>

@@ -26,23 +26,23 @@ const NavLinks = () => {
         to="Profile"
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-gray-300 text-xl"
+        className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-xl 2xl:text-2xl"
       >
         Home
       </ScrollLink>
 
-      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 text-xl ">
+      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-xl 2xl:text-2xl ">
         About Me
       </button>
 
       <Link
         to="/portofolio"
-        className="cursor-pointer hover:text-gray-300 text-xl"
+        className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-xl 2xl:text-2xl"
       >
         Portofolio
       </Link>
 
-      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 text-xl">
+      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-xl 2xl:text-2xl">
         Service
       </button>
     </>
@@ -88,7 +88,7 @@ export default function NavBar() {
     <header className={getHeaderClass()}>
       <nav className={getNavBarClass()} role="navigation" aria-label="Main Navigation">
         <div className="logo text-white ms-5 sm:ms-6 lg:ms-24">
-          <h1 className="text-xl xs:text-2xl md:text-3xl font-bold">AthallahTS</h1>
+          <h1 className="text-xl xs:text-2xl md:text-3xl 2xl:text-4xl font-bold">AthallahTS</h1>
         </div>
         <div className="hidden lg:flex nav-links space-x-16 me-10">
           <NavLinks />

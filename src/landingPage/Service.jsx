@@ -12,14 +12,14 @@ export default function Service() {
         >
             {/* Title */}
             <div className="title text-center space-y-4">
-                <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
+                <p className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
                     <span>Need My </span> 
                     <span className="text-amber-500">Service?</span>
                 </p>
             </div>
 
             <div className="w-full lg:max-w-[80vw] text-center px-6 space-y-2 md:space-y-3 lg:space-y-4">
-                <div className='text-sm xs:text-base mdp:text-xl 2xl:text-2xl'>    
+                <div className='text-sm xs:text-base md:text-xl 2xl:text-2xl'>    
                     <p>
                         I specialize in Data Analytics using Tableau, Excel, SQL, and Python, and Full-Stack Web Development with React.js and Laravel.
                         Whether you need a dynamic web application or insights from complex data, I&apos;m here to help.

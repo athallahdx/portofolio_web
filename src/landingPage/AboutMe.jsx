@@ -54,20 +54,20 @@ import TechStackLogos from "./TechStackLogos";
                         className="aboutme place-items-center pb-5"
                     >
                         <div className="border-container text-center border-b-2">
-                            <p className="text-3xl xs:text-4xl mdp:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
+                            <p className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold pb-0 border-b-2 inline-block">
                                 <span>About</span> 
                                 <span className="text-amber-500"> Me</span>
                             </p>
                         </div>
-                        <p className="hidden lg:block max-w-[93vw] text-sm xs:text-base mdp:text-xl 2xl:text-2xl  text-center mt-4">
+                        <p className="hidden lg:block max-w-[93vw] text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-2xl  text-center mt-4">
                             As a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer proficient in React.js and Laravel, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.
                         </p>
-                        <p className="lg:hidden max-w-[93vw] text-sm xs:text-base mdp:text-xl 2xl:text-2xl  text-center mt-4">
+                        <p className="lg:hidden max-w-[93vw] text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-2xl  text-center mt-4">
                             As a Junior Data Analyst and a Full-Stack Web Developer, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.
                         </p>
                     </motion.div>
 
-                    <div className="logos flex space-x-8 sm:space-x-16 lg:space-x-36 mt-3 mb-3 sm:mb-0 lg:mb-4 justify-center">
+                    <div className="logos flex space-x-8 sm:space-x-16 lg:space-x-36 mt-3 mb-3 sm:mb-0 lg:mb-4 justify-center items-center">
                         <TechStackLogos /> 
                     </div>
 
@@ -82,9 +82,9 @@ import TechStackLogos from "./TechStackLogos";
                             <img src={data1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[300px] lg:w-auto" alt="" />
                         </div>
                         <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-12">
-                            <p className="text-xl md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2  2xl:mb-3">Data Analysis Expertise</p>
+                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 md:py-3 mdp:max-lg:mt-1 lg:mb-2  2xl:mb-3">Data Analysis Expertise</p>
 
-                            <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
+                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
                                 <li> <span className="font-bold md:font-medium">Tableau: </span> Proficient in creating interactive visualizations, dashboard, and infographics to present data insights effectively.</li>
                                 <li> <span className="font-bold md:font-medium">Excel: </span> Proficient in creating interactive dashboards and visualizations to present data insights effectively.</li>
                                 <li> <span className="font-bold md:font-medium">SQL: </span> Experienced in writing complex queries to extract, manipulate, and analyze data from relational databases.</li>
@@ -101,16 +101,16 @@ import TechStackLogos from "./TechStackLogos";
                         }`}
                     >
                         <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-8 xl:pe-12 lg:pb-4">
-                            <p className="text-xl md:text-xl py-2 text-center mdp:max-lg:text-2xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
+                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1  md:py-3 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
 
-                            <ul className="list-disc list-outside text-sm xs:text-base mdp:max-lg:text-xl md:text-lg 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 xl:pb-3 pl-5">
+                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 xl:pb-3 pl-5">
                                 <li><span className="font-bold md:font-medium">React.js: </span> Develop dynamic and responsive user interfaces with React.js, ensuring a seamless user experience.</li>
                                 <li><span className="font-bold md:font-medium">Laravel: </span> Build robust back-end systems using Laravel, focusing on scalability and security.</li>
                                 <li><span className="font-bold md:font-medium">Version Control (Git): </span> Experienced in using Git for version control, facilitating collaboration and code management.</li>
                                 <li><span className="font-bold md:font-medium">RESTful APIs: </span> Skilled in designing and consuming RESTful APIs to enable communication between front-end and back-end systems.</li>
                             </ul>
                         </div>
-                        <div className="picture1 w-full sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
+                        <div className="picture2 w-full justify-items-center sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
                             <img src={dev1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[310px] xl:h-[290px] xl:w- lg:w-auto" alt="" />
                         </div>
                     </div>
