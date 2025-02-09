@@ -36,7 +36,7 @@ export default function Profile() {
         </p>
         <p className='
           max-w-3xl font-medium mt-2 lg mbl:mt-6 px-4 lg:px-0 lg:leading-7 
-          text-base mbl:text-base sm:text-xl md:text-xl mdp:text-2xl lg:text-lg 2xl:text-xl pt-0
+          text-base mbl:text-base sm:text-xl md:text-xl mdp:text-2xl lg:text-lg xl:text-xl 2xl:text-xl pt-0
         '>
           <span className='hidden lg:inline'>
             I&apos;am a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer 

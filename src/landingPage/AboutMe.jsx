@@ -79,12 +79,12 @@ import TechStackLogos from "./TechStackLogos";
                         }`}
                     >
                         <div className="picture1 w-full justify-items-center sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
-                            <img src={data1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[300px] lg:w-auto" alt="" />
+                            <img src={data1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[300px] lg:w-auto xl:h-[335px]" alt="" />
                         </div>
-                        <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-12">
-                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1 md:py-3 mdp:max-lg:mt-1 lg:mb-2  2xl:mb-3">Data Analysis Expertise</p>
+                        <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-12 xl:pb-5">
+                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left xl:text-3xl font-bold mdp:max-lg:mb-1 md:py-3 mdp:max-lg:mt-1 lg:mb-2  2xl:mb-3">Data Analysis Expertise</p>
 
-                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
+                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl xl:text-xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 pl-5">
                                 <li> <span className="font-bold md:font-medium">Tableau: </span> Proficient in creating interactive visualizations, dashboard, and infographics to present data insights effectively.</li>
                                 <li> <span className="font-bold md:font-medium">Excel: </span> Proficient in creating interactive dashboards and visualizations to present data insights effectively.</li>
                                 <li> <span className="font-bold md:font-medium">SQL: </span> Experienced in writing complex queries to extract, manipulate, and analyze data from relational databases.</li>
@@ -101,9 +101,9 @@ import TechStackLogos from "./TechStackLogos";
                         }`}
                     >
                         <div className="desc1 ms-5 pb-5 md:pb-0 pe-4 lg:pe-8 xl:pe-12 lg:pb-4">
-                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left 2xl:text-3xl font-bold mdp:max-lg:mb-1  md:py-3 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
+                            <p className="text-xl md:text-xl py-2 text-center md:max-lg:text-3xl lg:text-left xl:text-3xl font-bold mdp:max-lg:mb-1  md:py-3 mdp:max-lg:mt-1 lg:mb-2 2xl:mb-3">Web Development Skills</p>
 
-                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 xl:pb-3 pl-5">
+                            <ul className="list-disc list-outside text-sm xs:text-base md:text-xl mdp:text-2xl xl:text-xl 2xl:text-[22px] 2xl:space-y-3 space-y-1 mdp:max-lg:space-y-2 xl:pb-3 pl-5">
                                 <li><span className="font-bold md:font-medium">React.js: </span> Develop dynamic and responsive user interfaces with React.js, ensuring a seamless user experience.</li>
                                 <li><span className="font-bold md:font-medium">Laravel: </span> Build robust back-end systems using Laravel, focusing on scalability and security.</li>
                                 <li><span className="font-bold md:font-medium">Version Control (Git): </span> Experienced in using Git for version control, facilitating collaboration and code management.</li>
@@ -111,7 +111,7 @@ import TechStackLogos from "./TechStackLogos";
                             </ul>
                         </div>
                         <div className="picture2 w-full justify-items-center sm:pt-3 lg:pt-0 lg:w-auto lg:max-w-lg">
-                            <img src={dev1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[310px] xl:h-[290px] xl:w- lg:w-auto" alt="" />
+                            <img src={dev1} className="w-[25rem] h-auto rounded-t-xl sm:mt-3 lg:mt-0 sm:rounded-2xl sm:object-cover object-center lg:rounded-none lg:h-[310px] 2xl:h-[300px] xl:w- lg:w-auto" alt="" />
                         </div>
                     </div>
                 </div>
