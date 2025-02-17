@@ -59,10 +59,10 @@ import TechStackLogos from "./TechStackLogos";
                                 <span className="text-amber-500"> Me</span>
                             </p>
                         </div>
-                        <p className="hidden lg:block max-w-[93vw] text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-2xl  text-center mt-4">
+                        <p className="hidden lg:block max-w-[93vw] text-base mbl:text-base sm:text-xl md:text-xl mdp:text-2xl lg:text-lg xl:text-xl  text-center mt-4">
                             As a Junior Data Analyst specializing in Tableau, Excel, SQL, and Python, and a Full-Stack Web Developer proficient in React.js and Laravel, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.
                         </p>
-                        <p className="lg:hidden max-w-[93vw] text-sm xs:text-base md:text-xl mdp:text-2xl 2xl:text-2xl  text-center mt-4">
+                        <p className="lg:hidden max-w-[93vw] text-base mbl:text-base sm:text-xl md:text-xl mdp:text-2xl lg:text-lg xl:text-xl  text-center mt-4">
                             As a Junior Data Analyst and a Full-Stack Web Developer, I bridge the gap between data-driven insights and robust web solutions. My expertise enables me to analyze complex datasets and develop dynamic web applications, ensuring seamless integration and optimal performance.
                         </p>
                     </motion.div>
