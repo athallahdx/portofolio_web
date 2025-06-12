@@ -114,7 +114,89 @@ export default function Portfolio() {
             <div className="absolute bottom-40 left-20 w-24 h-24 bg-amber-500/10 rounded-full blur-xl animate-pulse delay-2000" />
             <div className="absolute bottom-20 right-10 w-16 h-16 bg-green-500/10 rounded-full blur-xl animate-pulse delay-3000" />
 
-            {/* Geometric Shapes */}
+            {/* Decorative Elements */}
+            {/* Circles */}
+            <div className="hidden sm:block absolute top-1/4 left-8 w-20 h-20 border-2 border-amber-500/20 rounded-full"></div>
+            <div className="hidden sm:block absolute bottom-1/4 right-8 w-12 h-12 border-2 border-blue-500/20 rounded-full"></div>
+            <div className="hidden sm:block absolute top-1/6 right-1/4 w-16 h-16 border-2 border-purple-500/20 rounded-full"></div>
+            <div className="hidden sm:block absolute bottom-1/6 left-1/4 w-10 h-10 border-2 border-green-500/20 rounded-full"></div>
+            <div className="hidden sm:block absolute top-1/2 left-12 w-8 h-8 border-2 border-teal-500/20 rounded-full"></div>
+            <div className="hidden sm:block absolute bottom-1/2 right-12 w-14 h-14 border-2 border-cyan-500/20 rounded-full"></div>
+
+            {/* Triangles */}
+            <div className="hidden sm:block absolute top-1/3 right-16">
+                <div className="w-0 h-0 border-l-[12px] border-l-transparent border-b-[18px] border-b-cyan-500/20 border-r-[12px] border-r-transparent"></div>
+            </div>
+            <div className="hidden sm:block absolute bottom-1/3 left-16 rotate-180">
+                <div className="w-0 h-0 border-l-[8px] border-l-transparent border-b-[14px] border-b-pink-500/20 border-r-[8px] border-r-transparent"></div>
+            </div>
+            <div className="hidden sm:block absolute top-2/3 right-1/3 rotate-90">
+                <div className="w-0 h-0 border-l-[10px] border-l-transparent border-b-[16px] border-b-indigo-500/20 border-r-[10px] border-r-transparent"></div>
+            </div>
+            <div className="hidden sm:block absolute bottom-2/3 left-1/3 rotate-45">
+                <div className="w-0 h-0 border-l-[6px] border-l-transparent border-b-[10px] border-b-rose-500/20 border-r-[6px] border-r-transparent"></div>
+            </div>
+
+            {/* Rectangles/Squares */}
+            <div className="hidden sm:block absolute top-1/5 right-1/5 w-12 h-8 border-2 border-rose-500/20 rotate-12"></div>
+            <div className="hidden sm:block absolute bottom-1/5 left-1/5 w-8 h-8 border-2 border-emerald-500/20 rotate-45"></div>
+            <div className="hidden sm:block absolute top-3/4 right-1/4 w-10 h-6 border-2 border-violet-500/20 -rotate-12"></div>
+            <div className="hidden sm:block absolute bottom-3/4 left-1/3 w-6 h-10 border-2 border-orange-500/20 rotate-30"></div>
+            <div className="hidden sm:block absolute top-1/2 right-1/6 w-14 h-10 border-2 border-lime-500/20 -rotate-15"></div>
+
+            {/* X shapes */}
+            <div className="hidden sm:block absolute top-1/4 right-1/3">
+                <div className="relative w-8 h-8">
+                    <div className="absolute w-full h-0.5 bg-lime-500/20 top-1/2 left-0 rotate-45"></div>
+                    <div className="absolute w-full h-0.5 bg-lime-500/20 top-1/2 left-0 -rotate-45"></div>
+                </div>
+            </div>
+            <div className="hidden sm:block absolute bottom-1/4 left-1/3">
+                <div className="relative w-6 h-6">
+                    <div className="absolute w-full h-0.5 bg-sky-500/20 top-1/2 left-0 rotate-45"></div>
+                    <div className="absolute w-full h-0.5 bg-sky-500/20 top-1/2 left-0 -rotate-45"></div>
+                </div>
+            </div>
+            <div className="hidden sm:block absolute top-1/2 right-1/5">
+                <div className="relative w-10 h-10">
+                    <div className="absolute w-full h-0.5 bg-fuchsia-500/20 top-1/2 left-0 rotate-45"></div>
+                    <div className="absolute w-full h-0.5 bg-fuchsia-500/20 top-1/2 left-0 -rotate-45"></div>
+                </div>
+            </div>
+
+            {/* Plus signs */}
+            <div className="hidden sm:block absolute top-1/6 left-1/6">
+                <div className="relative w-6 h-6">
+                    <div className="absolute w-full h-0.5 bg-yellow-500/30 top-1/2 left-0"></div>
+                    <div className="absolute w-0.5 h-full bg-yellow-500/30 top-0 left-1/2"></div>
+                </div>
+            </div>
+            <div className="hidden sm:block absolute bottom-1/6 right-1/6">
+                <div className="relative w-8 h-8">
+                    <div className="absolute w-full h-0.5 bg-red-500/30 top-1/2 left-0"></div>
+                    <div className="absolute w-0.5 h-full bg-red-500/30 top-0 left-1/2"></div>
+                </div>
+            </div>
+            <div className="hidden sm:block absolute top-3/4 left-1/6">
+                <div className="relative w-5 h-5">
+                    <div className="absolute w-full h-0.5 bg-blue-500/30 top-1/2 left-0"></div>
+                    <div className="absolute w-0.5 h-full bg-blue-500/30 top-0 left-1/2"></div>
+                </div>
+            </div>
+
+            {/* Dots */}
+            <div className="hidden sm:block absolute top-1/3 left-1/4 w-2 h-2 bg-blue-500/40 rounded-full"></div>
+            <div className="hidden sm:block absolute top-2/3 right-1/4 w-3 h-3 bg-purple-500/40 rounded-full"></div>
+            <div className="hidden sm:block absolute bottom-1/2 left-1/6 w-1 h-1 bg-green-500/40 rounded-full"></div>
+            <div className="hidden sm:block absolute top-1/2 right-1/6 w-2 h-2 bg-amber-500/40 rounded-full"></div>
+            <div className="hidden sm:block absolute bottom-1/3 right-1/6 w-2 h-2 bg-pink-500/40 rounded-full"></div>
+
+            {/* Diamond shapes */}
+            <div className="hidden sm:block absolute top-1/5 left-1/3 w-6 h-6 border-2 border-teal-500/20 rotate-45"></div>
+            <div className="hidden sm:block absolute bottom-1/5 right-1/3 w-4 h-4 border-2 border-pink-500/20 rotate-45"></div>
+            <div className="hidden sm:block absolute top-2/3 left-1/5 w-5 h-5 border-2 border-cyan-500/20 rotate-45"></div>
+
+            {/* Geometric Shapes (Enhanced existing ones) */}
             <motion.div
                 animate={floatingAnimation}
                 className="absolute top-1/4 left-1/4 w-4 h-4 border-2 border-blue-400/30 rotate-45"
