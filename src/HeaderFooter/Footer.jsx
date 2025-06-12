@@ -4,7 +4,7 @@ import { SiVite } from "react-icons/si"
 
 export default function Footer() {
     return (
-        <footer className="bg-custom-gradient border-t border-slate-700/30 text-white py-6 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-custom-gradient border-t border-slate-700/30 text-white py-3 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-5">
                     {/* Copyright Section */}
@@ -15,7 +15,7 @@ export default function Footer() {
                     </div>
 
                     {/* Tech Stack Section */}
-                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                    <div className="flex flex-col sm:flex-row items-center gap-3 pt-2 sm:gap-4">
                         <span className="text-xs sm:text-sm font-medium uppercase tracking-wider text-slate-300">Built with:</span>
                         <div className="flex items-center gap-5 sm:gap-6">
                             {/* Vite */}
@@ -43,11 +43,6 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                {/* Optional: Add a subtle divider and additional footer content */}
-                <div className="mt-6 pt-4 border-t border-slate-700/20 flex justify-center">
-                    <p className="text-xs text-slate-400 text-center">Thanks for visiting my portfolio!</p>
                 </div>
             </div>
         </footer>
