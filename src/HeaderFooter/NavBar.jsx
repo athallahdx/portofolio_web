@@ -93,9 +93,9 @@ export default function NavBar() {
                         <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-2xl sm:text-3xl font-bold text-white"
+                            className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent"
                         >
-                            <span className="text-amber-500">A</span>thallah
+                            AthallahTS
                         </motion.div>
                     </Link>
 
