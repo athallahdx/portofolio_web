@@ -104,7 +104,7 @@ export default function Portfolio() {
     ]
 
     return (
-        <div className="min-h-screen relative overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen relative overflow-hidden flex items-center justify-center mt-6 px-4 sm:px-6 lg:px-8">
             {/* Animated Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900/20 to-purple-900/20 -z-10" />
 
@@ -331,7 +331,7 @@ export default function Portfolio() {
                             <motion.button
                                 whileHover={{ scale: 1.05, x: -5 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="group flex items-center gap-3 mx-auto text-slate-300 hover:text-white transition-colors duration-300"
+                                className="group flex items-center gap-3 mx-auto text-slate-300 hover:text-white transition-colors duration-300 pb-6"
                             >
                                 <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
                                 <span className="text-lg font-medium">Back to Home</span>

@@ -1,14 +1,16 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Link, useLocation } from "react-router"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { Menu, X } from 'lucide-react'
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const location = useLocation()
+    const menuRef = useRef(null)
+    const buttonRef = useRef(null)
 
     // Handle scroll effect
     useEffect(() => {
@@ -28,13 +30,20 @@ export default function NavBar() {
     // Close mobile menu when clicking outside
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (isOpen && !event.target.closest(".mobile-menu-container")) {
+            // Only close if menu is open and click is outside both menu and button
+            if (
+                isOpen &&
+                menuRef.current &&
+                buttonRef.current &&
+                !menuRef.current.contains(event.target) &&
+                !buttonRef.current.contains(event.target)
+            ) {
                 setIsOpen(false)
             }
         }
 
-        document.addEventListener("click", handleClickOutside)
-        return () => document.removeEventListener("click", handleClickOutside)
+        document.addEventListener("mousedown", handleClickOutside)
+        return () => document.removeEventListener("mousedown", handleClickOutside)
     }, [isOpen])
 
     const navItems = [
@@ -63,6 +72,11 @@ export default function NavBar() {
         }
     }
 
+    const toggleMenu = (e) => {
+        e.stopPropagation()
+        setIsOpen(!isOpen)
+    }
+
     return (
         <motion.nav
             initial={{ y: -100 }}
@@ -75,11 +89,15 @@ export default function NavBar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
                     {/* Logo */}
-                    <div className="logo">
-                        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent">
-                            AthallahTS
-                        </h1>
-                    </div>
+                    <Link to="/" className="flex-shrink-0">
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-2xl sm:text-3xl font-bold text-white"
+                        >
+                            <span className="text-amber-500">A</span>thallah
+                        </motion.div>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
@@ -109,14 +127,15 @@ export default function NavBar() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden mobile-menu-container relative">
+                    <div className="md:hidden relative">
                         <motion.button
+                            ref={buttonRef}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => setIsOpen(!isOpen)}
+                            onClick={toggleMenu}
                             className="inline-flex items-center justify-center p-3 rounded-lg text-slate-300 hover:text-amber-500 hover:bg-slate-800/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500 transition-colors duration-200"
                             aria-expanded={isOpen}
+                            aria-label="Toggle navigation menu"
                         >
-                            <span className="sr-only">Open main menu</span>
                             {isOpen ? (
                                 <X className="block h-7 w-7" aria-hidden="true" />
                             ) : (
@@ -128,11 +147,12 @@ export default function NavBar() {
                         <AnimatePresence>
                             {isOpen && (
                                 <motion.div
+                                    ref={menuRef}
                                     initial={{ opacity: 0, y: -10, scale: 0.95 }}
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
                                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                                     transition={{ duration: 0.2, ease: "easeOut" }}
-                                    className="absolute right-0 top-full mt-2 w-64 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-xl overflow-hidden"
+                                    className="absolute right-0 top-full mt-2 w-64 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-xl overflow-hidden z-50"
                                 >
                                     {/* Navigation Links */}
                                     <div className="py-2">
