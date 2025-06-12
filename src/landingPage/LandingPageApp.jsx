@@ -2,8 +2,8 @@
 
 import { useEffect } from "react"
 import AboutMe from "./AboutMe.jsx"
-import Profile from "./profile"
-import Service from "./service"
+import Profile from "./Profile.jsx"
+import Service from "./Service.jsx"
 import LatestWork from "./LatestWork.jsx"
 import "../css/styles.css"
 
