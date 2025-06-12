@@ -1,22 +1,55 @@
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { SiVite } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri"
+import { FaReact } from "react-icons/fa"
+import { SiVite } from "react-icons/si"
 
 export default function Footer() {
     return (
-        <footer className="bg-footer-color mb- text-white py-4 px-6 md:px-10 flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between items-center text-base md:text-lg font-medium">
-            <span className="text-center md:text-left">
-                © 2025 Athallah Tsany Satriyaji | All Rights Reserved
-            </span>
+        <footer className="bg-custom-gradient border-t border-slate-700/30 text-white py-6 px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-5">
+                    {/* Copyright Section */}
+                    <div className="text-center md:text-left">
+                        <p className="font-medium text-sm sm:text-base opacity-90 tracking-wide">
+                            © 2025 <span className="font-semibold">Athallah Tsany Satriyaji</span> | All Rights Reserved
+                        </p>
+                    </div>
 
-            <div className="flex flex-row items-center space-x-4 space-y-2  md:space-y-0">
-                <span className="text-sm md:text-base">Made with:</span>
-                <div className="flex space-x-6 md:space-x-4 text-[25px] md:text-[30px]">
-                    <SiVite />
-                    <FaReact />
-                    <RiTailwindCssFill />
+                    {/* Tech Stack Section */}
+                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                        <span className="text-xs sm:text-sm font-medium uppercase tracking-wider text-slate-300">Built with:</span>
+                        <div className="flex items-center gap-5 sm:gap-6">
+                            {/* Vite */}
+                            <div className="group flex flex-col items-center">
+                                <SiVite className="text-2xl sm:text-3xl text-yellow-200 group-hover:text-yellow-300 transition-all duration-300 transform group-hover:scale-110" />
+                                <span className="text-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">
+                  Vite
+                </span>
+                            </div>
+
+                            {/* React */}
+                            <div className="group flex flex-col items-center">
+                                <FaReact className="text-2xl sm:text-3xl text-blue-400 group-hover:text-blue-300 transition-all duration-300 transform group-hover:scale-110 animate-[spin_8s_linear_infinite]" />
+                                <span className="text-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">
+                  React
+                </span>
+                            </div>
+
+                            {/* Tailwind */}
+                            <div className="group flex flex-col items-center">
+                                <RiTailwindCssFill className="text-2xl sm:text-3xl text-cyan-400 group-hover:text-cyan-300 transition-all duration-300 transform group-hover:scale-110" />
+                                <span className="text-[10px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">
+                  Tailwind
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Optional: Add a subtle divider and additional footer content */}
+                <div className="mt-6 pt-4 border-t border-slate-700/20 flex justify-center">
+                    <p className="text-xs text-slate-400 text-center">Thanks for visiting my portfolio!</p>
                 </div>
             </div>
         </footer>
-    );
+    )
 }

@@ -1,113 +1,201 @@
-import { useLocation, useNavigate } from "react-router";
-import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router";
-import { FaTimes } from "react-icons/fa";
-import { CgMenu } from "react-icons/cg";
+"use client"
 
-const NavLinks = () => {
-  const location = useLocation(); 
-  const navigate = useNavigate(); 
+import { useLocation, useNavigate } from "react-router"
+import { useState, useEffect, useCallback } from "react"
+import { Link as ScrollLink } from "react-scroll"
+import { Link } from "react-router"
+import { X, Menu } from "lucide-react"
 
-  const handleScrollNav = (section) => {
-    if (location.pathname !== "/") {
-      navigate("/"); 
-      setTimeout(() => {
-        document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
-      }, 100); 
-    } else {
-      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+const NavLinks = ({ onLinkClick, isMobile = false }) => {
+    const location = useLocation()
+    const navigate = useNavigate()
 
-  return (
-    <>
-      <ScrollLink
-        to="Profile"
-        smooth={true}
-        duration={500}
-        className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-2xl"
-      >
-        Home
-      </ScrollLink>
+    const handleScrollNav = useCallback(
+        (section) => {
+            if (location.pathname !== "/") {
+                navigate("/")
+                setTimeout(() => {
+                    document.getElementById(section)?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    })
+                }, 100)
+            } else {
+                document.getElementById(section)?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                })
+            }
 
-      <button onClick={() => handleScrollNav("About")} className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-2xl ">
-        About Me
-      </button>
+            // Close mobile menu after navigation
+            if (isMobile && onLinkClick) {
+                onLinkClick()
+            }
+        },
+        [location.pathname, navigate, isMobile, onLinkClick],
+    )
 
-      <Link
-        to="/portofolio"
-        className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-2xl"
-      >
-        Portofolio
-      </Link>
+    const linkClasses = `
+    relative cursor-pointer transition-all duration-300 ease-in-out
+    hover:text-blue-300 active:text-blue-400
+    text-base md:text-lg lg:text-base xl:text-lg
+    font-medium tracking-wide
+    before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 
+    before:bg-gradient-to-r before:from-blue-400 before:to-purple-400
+    before:transition-all before:duration-300 before:ease-in-out
+    hover:before:w-full
+    ${isMobile ? "py-3 px-4 rounded-lg hover:bg-white/10" : ""}
+  `
 
-      <button onClick={() => handleScrollNav("Service")} className="cursor-pointer hover:text-gray-300 md:text-2xl mdp:text-3xl lg:text-2xl">
-        Service
-      </button>
-    </>
-  );
-};
+    return (
+        <div className={`flex text-white text-2xl ${isMobile ? "flex-col space-y-2" : "flex-row space-x-8 xl:space-x-12"}`}>
+            <ScrollLink
+                to="Profile"
+                smooth={true}
+                duration={500}
+                className={linkClasses}
+                onClick={() => isMobile && onLinkClick && onLinkClick()}
+            >
+                Home
+            </ScrollLink>
 
+            <button onClick={() => handleScrollNav("About")} className={linkClasses}>
+                About Me
+            </button>
+
+            <Link to="/portofolio" className={linkClasses} onClick={() => isMobile && onLinkClick && onLinkClick()}>
+                Portfolio
+            </Link>
+
+            <button onClick={() => handleScrollNav("Service")} className={linkClasses}>
+                Services
+            </button>
+        </div>
+    )
+}
 
 export default function NavBar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
 
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 801);
+    // Improved scroll and resize handlers with debouncing
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 1024)
+        checkMobile()
 
-    const handleResize = () => setIsMobile(window.innerWidth < 801);
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+        let scrollTimeout
+        let resizeTimeout
 
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll);
+        const handleScroll = () => {
+            clearTimeout(scrollTimeout)
+            scrollTimeout = setTimeout(() => {
+                setIsScrolled(window.scrollY > 20)
+            }, 10)
+        }
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+        const handleResize = () => {
+            clearTimeout(resizeTimeout)
+            resizeTimeout = setTimeout(() => {
+                checkMobile()
+                if (window.innerWidth >= 1024) {
+                    setIsMenuOpen(false)
+                }
+            }, 100)
+        }
 
-  const getHeaderClass = () => {
-    return isMobile
-      ? "fixed top-0 w-full z-50 transition-all duration-300 bg-blue-950 bg-opacity-80 backdrop-blur-md shadow-lg border-b border-gray-600"
-      : isScrolled
-      ? "fixed top-0 w-full z-50 transition-all duration-300 bg-blue-950 bg-opacity-80 backdrop-blur-md shadow-lg border-b border-gray-600"
-      : "fixed top-0 w-full z-50 transition-all duration-300 md:bg-transparent border-b border-gray-600";
-  };
+        window.addEventListener("resize", handleResize)
+        window.addEventListener("scroll", handleScroll, { passive: true })
 
-  const getNavBarClass = () => {
-    return isMobile && isMenuOpen
-      ? "navbar flex justify-between items-center py-3 md:py-6 border-b border-gray-600 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200"
-      : "navbar flex justify-between items-center py-3 md:py-6 text-lg font-semibold leading-7 text-slate-700 dark:text-slate-200";
-  };
+        return () => {
+            window.removeEventListener("resize", handleResize)
+            window.removeEventListener("scroll", handleScroll)
+            clearTimeout(scrollTimeout)
+            clearTimeout(resizeTimeout)
+        }
+    }, [])
 
-  return (
-    <header className={getHeaderClass()}>
-      <nav className={getNavBarClass()} role="navigation" aria-label="Main Navigation">
-        <div className="logo text-white ms-5 sm:ms-6 lg:ms-24">
-          <h1 className="text-xl xs:text-2xl md:text-3xl 2xl:text-4xl font-bold">AthallahTS</h1>
-        </div>
-        <div className="hidden lg:flex nav-links space-x-16 me-10">
-          <NavLinks />
-        </div>
-        <div className="menu text-white lg:hidden me-8">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? (
-              <FaTimes className="text-[28px] xs:text-[30px] sm:text-[40px]" />
-            ) : (
-              <CgMenu className="text-[28px] xs:text-[30px] sm:text-[40px]" />
-            )}
-          </button>
-        </div>
-      </nav>
-      {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center font-semibold text-white basis-full flex-wrap pb-5 pt-5 sm:pb-4 sm:pt-4 space-y-6 xs:space-y-8 sm:space-y-8">
-          <NavLinks />
-        </div>
-      )}
-    </header>
-  );
+    // Close menu when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isMenuOpen && !event.target.closest("nav")) {
+                setIsMenuOpen(false)
+            }
+        }
+
+        if (isMenuOpen) {
+            document.addEventListener("click", handleClickOutside)
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "unset"
+        }
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside)
+            document.body.style.overflow = "unset"
+        }
+    }, [isMenuOpen])
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+    const closeMenu = () => setIsMenuOpen(false)
+
+    const headerClasses = `
+    fixed top-0 w-full z-50 transition-all duration-500 ease-in-out
+    ${
+        isScrolled || isMobile
+            ? "bg-slate-900/95 backdrop-blur-xl shadow-2xl border-b border-slate-700/50"
+            : "bg-transparent border-b border-slate-600/30"
+    }
+  `
+
+    return (
+        <>
+            <header className={headerClasses}>
+                <nav className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12" role="navigation" aria-label="Main Navigation">
+                    <div className="flex justify-between items-center py-4 lg:py-6">
+                        {/* Logo */}
+                        <div className="logo">
+                            <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent">
+                                AthallahTS
+                            </h1>
+                        </div>
+
+                        {/* Desktop Navigation */}
+                        <div className="hidden lg:flex items-center">
+                            <NavLinks />
+                        </div>
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            onClick={toggleMenu}
+                            className="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400/50"
+                            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                            aria-expanded={isMenuOpen}
+                        >
+                            {isMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" />}
+                        </button>
+                    </div>
+                </nav>
+
+                {/* Mobile Menu Overlay */}
+                <div
+                    className={`lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
+                        isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+                    }`}
+                    onClick={closeMenu}
+                />
+
+                {/* Mobile Menu */}
+                <div
+                    className={`lg:hidden fixed top-full left-0 right-0 bg-slate-900/98 backdrop-blur-xl border-b border-slate-700/50 transform transition-all duration-300 ease-in-out ${
+                        isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+                    }`}
+                >
+                    <div className="container mx-auto px-4 sm:px-6 py-6">
+                        <NavLinks onLinkClick={closeMenu} isMobile={true} />
+                    </div>
+                </div>
+            </header>
+        </>
+    )
 }
