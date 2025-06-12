@@ -44,7 +44,7 @@ const staggerContainer = {
 
 export default function Profile() {
   return (
-      <div className="min-h-screen relative overflow-hidden flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen relative overflow-hidden pt-6 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/20 to-slate-900/80 -z-10" />
         <div className="absolute top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl -z-10" />
