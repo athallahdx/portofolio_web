@@ -32,7 +32,7 @@ export default function LandingPageApp() {
 
     return (
         <main className="text-white overflow-hidden">
-            <section id="Profile" className="scroll-mt-20 lg:scroll-mt-24">
+            <section id="Profile" className="scroll-mt-16 lg:scroll-mt-24">
                 <Profile />
             </section>
 
