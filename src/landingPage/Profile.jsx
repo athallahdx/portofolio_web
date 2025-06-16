@@ -104,7 +104,7 @@ export default function Profile() {
         </div>
 
         <div className="max-w-6xl w-full mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-64 items-center">
             {/* Text Content */}
             <motion.div
                 initial="hidden"
