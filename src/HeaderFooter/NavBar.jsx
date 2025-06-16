@@ -1,14 +1,15 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Link, useLocation } from "react-router"
+import { Link, useLocation, useNavigate } from "react-router"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from 'lucide-react'
+import { Menu, X } from "lucide-react"
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const location = useLocation()
+    const navigate = useNavigate()
     const menuRef = useRef(null)
     const buttonRef = useRef(null)
 
@@ -59,14 +60,33 @@ export default function NavBar() {
         if (href.startsWith("/#")) {
             // Handle hash navigation
             if (location.pathname !== "/") {
-                // If not on home page, navigate to home first
-                window.location.href = href
+                // If not on home page, navigate to home first then scroll
+                navigate("/")
+                setTimeout(() => {
+                    if (href === "/#Profile") {
+                        // For home, scroll to very top
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                    } else {
+                        // For other sections, scroll to specific element
+                        const id = href.replace("/#", "")
+                        const element = document.getElementById(id)
+                        if (element) {
+                            element.scrollIntoView({ behavior: "smooth" })
+                        }
+                    }
+                }, 100)
             } else {
                 // If on home page, smooth scroll to section
-                const id = href.replace("/#", "")
-                const element = document.getElementById(id)
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth" })
+                if (href === "/#Profile") {
+                    // For home, scroll to very top
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                } else {
+                    // For other sections, scroll to specific element
+                    const id = href.replace("/#", "")
+                    const element = document.getElementById(id)
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" })
+                    }
                 }
             }
         }
@@ -89,7 +109,7 @@ export default function NavBar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
                     {/* Logo */}
-                    <Link to="/" className="flex-shrink-0">
+                    <Link to="/" className="flex-shrink-0" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                         <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
