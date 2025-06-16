@@ -44,7 +44,7 @@ const staggerContainer = {
 
 export default function Profile() {
   return (
-      <div className="min-h-screen relative overflow-hidden lg:pt-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen pt-0 mt-0 relative overflow-hidden lg:pt-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/20 to-slate-900/80 -z-10" />
         <div className="absolute top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl -z-10" />
@@ -103,8 +103,8 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className="max-w-7xl w-full mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="max-w-6xl w-full mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
             {/* Text Content */}
             <motion.div
                 initial="hidden"
