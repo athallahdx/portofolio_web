@@ -44,7 +44,7 @@ const staggerContainer = {
 
 export default function Profile() {
   return (
-      <div className="min-h-screen relative overflow-hidden pt-6 lg:pt-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen relative overflow-hidden lg:pt-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/20 to-slate-900/80 -z-10" />
         <div className="absolute top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl -z-10" />
@@ -113,7 +113,7 @@ export default function Profile() {
                 variants={staggerContainer}
                 className="order-2 lg:order-1 text-center lg:text-left"
             >
-              <motion.p variants={slideIn} className="text-xl sm:text-2xl text-slate-300 mb-2">
+              <motion.p variants={slideIn} className="text-xl font-semibold sm:text-2xl text-slate-300 mb-2">
                 Hello, It's Me
               </motion.p>
 
@@ -124,7 +124,7 @@ export default function Profile() {
                 Athallah Tsany Satriyaji
               </motion.h1>
 
-              <motion.div variants={slideIn} className="text-xl sm:text-2xl md:text-3xl text-slate-300 mb-6">
+              <motion.div variants={slideIn} className="text-xl font-semibold sm:text-2xl md:text-3xl text-slate-300 mb-6">
                 And I'm a{" "}
                 <TypeAnimation
                     sequence={["Data Analyst", 1000, "Web Developer", 1000]}
@@ -215,7 +215,7 @@ export default function Profile() {
               <motion.img
                   src={profil || "/placeholder.svg"}
                   alt="Athallah Tsany Satriyaji"
-                  className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain drop-shadow-2xl"
+                  className="max-w-[250px] sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain drop-shadow-2xl"
                   animate={{
                     y: [0, -15, 0],
                   }}
